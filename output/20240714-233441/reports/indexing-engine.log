@@ -1,0 +1,655 @@
+23:34:41,277 graphrag.config.read_dotenv INFO Loading pipeline .env file
+23:34:41,298 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 56",
+        "type": "openai_chat",
+        "model": "llama3-8b-8192",
+        "max_tokens": 3000,
+        "request_timeout": 300.0,
+        "api_base": "https://api.groq.com/openai/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 5,
+        "max_retry_wait": 20.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 10
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": ".",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_embedding",
+            "model": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q2_K.gguf",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:1234/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 10
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": false,
+        "raw_entities": false,
+        "top_level_nodes": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 10
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 10
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 10
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 10
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "max_tokens": 3000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+23:34:41,309 graphrag.index.create_pipeline_config INFO skipping workflows 
+23:34:41,314 graphrag.index.run INFO Running pipeline
+23:34:41,315 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at output\20240714-233441\artifacts
+23:34:41,319 graphrag.index.input.load_input INFO loading input from root_dir=input
+23:34:41,319 graphrag.index.input.load_input INFO using file storage for input
+23:34:41,324 graphrag.index.storage.file_pipeline_storage INFO search input for files matching .*\.txt$
+23:34:41,325 graphrag.index.input.text INFO found text files from input, found [('breast_cancer.txt', {})]
+23:34:41,346 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+23:34:41,347 graphrag.index.run INFO Final # of rows loaded: 1
+23:34:41,754 graphrag.index.run INFO Running workflow: create_base_text_units...
+23:34:41,754 graphrag.index.run INFO dependencies for create_base_text_units: []
+23:34:41,767 datashaper.workflow.workflow INFO executing verb orderby
+23:34:41,791 datashaper.workflow.workflow INFO executing verb zip
+23:34:41,808 datashaper.workflow.workflow INFO executing verb aggregate_override
+23:34:41,846 datashaper.workflow.workflow INFO executing verb chunk
+23:34:42,605 datashaper.workflow.workflow INFO executing verb select
+23:34:42,623 datashaper.workflow.workflow INFO executing verb unroll
+23:34:42,646 datashaper.workflow.workflow INFO executing verb rename
+23:34:42,664 datashaper.workflow.workflow INFO executing verb genid
+23:34:42,697 datashaper.workflow.workflow INFO executing verb unzip
+23:34:42,716 datashaper.workflow.workflow INFO executing verb copy
+23:34:42,745 datashaper.workflow.workflow INFO executing verb filter
+23:34:42,791 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+23:34:43,387 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+23:34:43,388 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+23:34:43,390 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+23:34:43,563 datashaper.workflow.workflow INFO executing verb entity_extract
+23:34:43,625 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=https://api.groq.com/openai/v1
+23:34:43,684 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for llama3-8b-8192: TPM=0, RPM=0
+23:34:43,684 graphrag.index.llm.load_llm INFO create concurrency limiter for llama3-8b-8192: 10
+23:34:46,858 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:46,870 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 1.547000000020489. input_tokens=2235, output_tokens=81
+23:34:48,187 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:48,194 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 2.9839999999967404. input_tokens=2233, output_tokens=1273
+23:34:48,245 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:48,254 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 3.0160000000032596. input_tokens=2234, output_tokens=2132
+23:34:48,270 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:48,284 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 2.985000000044238. input_tokens=2235, output_tokens=2286
+23:34:48,657 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:48,666 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 3.469000000040978. input_tokens=2234, output_tokens=2423
+23:34:48,763 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:48,768 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 1.8900000000139698. input_tokens=2234, output_tokens=1053
+23:34:49,327 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:49,334 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 4.171999999962281. input_tokens=2234, output_tokens=1742
+23:34:49,949 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:49,959 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 4.671999999962281. input_tokens=2233, output_tokens=2811
+23:34:50,231 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:50,235 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 1.952999999979511. input_tokens=2233, output_tokens=543
+23:34:50,317 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:50,326 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 4.98399999999674. input_tokens=2235, output_tokens=2238
+23:34:50,647 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:50,656 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 5.563000000023749. input_tokens=2233, output_tokens=2251
+23:34:50,914 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:50,919 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 2.155999999959022. input_tokens=2108, output_tokens=288
+23:34:51,105 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:51,114 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 5.75. input_tokens=2234, output_tokens=2902
+23:34:52,294 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:52,299 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 3.625. input_tokens=2233, output_tokens=715
+23:34:52,339 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:52,351 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 4.092999999993481. input_tokens=2232, output_tokens=2063
+23:34:52,693 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:52,708 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 4.51600000000326. input_tokens=2233, output_tokens=2913
+23:34:52,793 datashaper.workflow.workflow INFO executing verb merge_graphs
+23:34:53,486 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+23:34:54,95 graphrag.index.run INFO Running workflow: create_summarized_entities...
+23:34:54,101 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+23:34:54,102 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+23:34:54,213 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+23:34:55,89 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,99 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"VICENTE VALERO\\""\nDescription List: ["", "\\"Vicente Valero has been with The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, and is involved in breast cancer research.\\"", "\\"Vicente Valero is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:55,99 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,101 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,105 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"NAOTO T. UENO\\""\nDescription List: ["", "\\"Naoto T. Ueno is a professor of medicine at The University of Texas MD Anderson Cancer Center, specializing in IBC, TNBC, and metastatic breast cancer.\\"", "\\"Naoto T. Ueno is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:55,121 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,134 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,136 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,138 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,139 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,141 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,143 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,148 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"INFLAMMATORY BREAST CANCER\\""\nDescription List: ["\\"Inflammatory Breast Cancer is a rare and aggressive disease.\\"", "\\"Inflammatory Breast Cancer is a rare and aggressive form of breast cancer.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer characterized by rapid onset and aggressive progression.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer mentioned in several research papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in various papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that was studied in the presented research.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer.\\"", "\\"Inflammatory Breast Cancer is an event that is the subject of various studies and consensus statements.\\"", "\\"Inflammatory Breast Cancer refers to a specific type of breast cancer.\\"", "\\"Inflammatory breast cancer is a type of breast cancer that is characterized by rapid growth and spread of cancer cells.\\"", "\\"inflammatory breast cancer is a type of breast cancer characterized by rapid growth and spread of cancer cells.\\""]\n#######\nOutput:\n'}
+23:34:55,149 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,154 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"TRIMODALITY TREATMENT\\""\nDescription List: ["\\"Trimodality Treatment is a treatment approach for IBC that involves a composite of systemic treatment, surgery, and radiation.\\"", "\\"Trimodality Treatment is a treatment approach for Inflammatory Breast Cancer that involves a composite of systemic treatment, surgery, and radiation.\\""]\n#######\nOutput:\n'}
+23:34:55,154 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,159 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BREAST CANCER\\""\nDescription List: ["\\"Breast Cancer is a disease mentioned in several research papers.\\"", "\\"Breast Cancer is a disease that Inflammatory Breast Cancer is a subtype of.\\"", "\\"Breast Cancer is a disease that is being studied in the provided articles.\\"", "\\"Breast Cancer is a disease that is the focus of multiple studies and research papers.\\"", "\\"Breast Cancer is a medical condition that was studied in several papers.\\"", "\\"Breast Cancer is a type of cancer studied in the provided text.\\"", "\\"Breast Cancer is a type of cancer studied in various papers.\\"", "\\"Breast Cancer is a type of cancer that affects the breast tissue.\\"", "\\"Breast Cancer is a type of cancer that affects the breast, with a risk of recurrence and potential survival benefits from extended adjuvant endocrine therapy.\\"", "\\"Breast Cancer is a type of cancer that affects the breast.\\"", "\\"Breast Cancer is a type of cancer that has improved treatment outcomes over the past two decades.\\"", "\\"Breast Cancer is a type of cancer that is studied in the provided articles.\\"", "\\"Breast Cancer is a type of cancer that is the subject of multiple studies.\\"", "\\"Breast Cancer is a type of cancer that is treated with Pazopanib and Lapatinib.\\"", "\\"Breast Cancer is a type of cancer that requires treatment.\\"", "\\"Breast Cancer is a type of cancer that was studied in the presented research.\\"", "\\"Breast Cancer is the disease being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Breast Cancer refers to a specific type of cancer.\\"", "\\"Breast cancer is a concept that is being researched and treated using various technologies and treatments.\\"", "\\"Breast cancer is a disease being treated with various systemic treatments.\\"", "\\"Breast cancer is a type of cancer that affects the breast.\\"", "\\"Breast cancer is a type of cancer that affects women and is treated with various therapies.\\"", "\\"Breast cancer is a type of cancer that affects women.\\"", "\\"Breast cancer is a type of cancer that is discussed in the text.\\"", "\\"Breast cancer is the disease being discussed, including IBC and non-IBC.\\"", "\\"Breast cancer is the disease being treated in the NeoSphere trial.\\"", "\\"Breast cancer is the disease being treated with T-DM1 and other therapies.\\"", "\\"breast cancer is a type of cancer that is treated with various therapies.\\"", "\\"breast cancer is an event or condition being researched and treated.\\""]\n#######\nOutput:\n'}
+23:34:55,160 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,163 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SURVIVAL OUTCOMES\\""\nDescription List: ["\\"Survival Outcomes refer to the length of time a patient with IBC survives after treatment.\\"", "\\"Survival outcomes are being improved with the use of systemic treatments for breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:55,163 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,168 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"THE UNIVERSITY OF TEXAS MD ANDERSON CANCER CENTER\\""\nDescription List: ["", "\\"The University of Texas MD Anderson Cancer Center is a cancer center that provides treatment for various types of cancer.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer center where Sudpreeda Chainitikun is currently working.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center in Houston, Texas, USA.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center where Vicente Valero and Naoto T. Ueno work.\\"", "\\"The University of Texas MD Anderson Cancer Center is a medical institution where Naoto T. Ueno works as a professor of medicine.\\"", "\\"The University of Texas MD Anderson Cancer Center is the institution where the authors are affiliated.\\""]\n#######\nOutput:\n'}
+23:34:55,168 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,173 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SUDPREEDA CHAINITIKUN\\""\nDescription List: ["", "\\"Sudpreeda Chainitikun is a medical oncologist with a fellowship in medical oncology.\\"", "\\"Sudpreeda Chainitikun is a person who graduated with a fellowship in medical oncology.\\""]\n#######\nOutput:\n'}
+23:34:55,173 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,174 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,181 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SYSTEMIC TREATMENT\\""\nDescription List: ["\\"Systemic Treatment is a type of treatment for IBC that involves chemotherapy and targeted therapies.\\"", "\\"Systemic Treatment refers to the use of medications to treat cancer.\\"", "\\"Systemic treatment is a type of treatment used for breast cancer, including chemotherapy and targeted therapy.\\""]\n#######\nOutput:\n'}
+23:34:55,181 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:55,184 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:55,190 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BORA LIM\\""\nDescription List: ["\\"Bora Lim is a translational investigator at The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, seeking to discover novel therapeutic strategies to halt or treat aggressive breast cancer.\\"", "\\"Bora Lim is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:55,191 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 1/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,452 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,458 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BREAST CANCER\\""\nDescription List: ["\\"Breast Cancer is a disease mentioned in several research papers.\\"", "\\"Breast Cancer is a disease that Inflammatory Breast Cancer is a subtype of.\\"", "\\"Breast Cancer is a disease that is being studied in the provided articles.\\"", "\\"Breast Cancer is a disease that is the focus of multiple studies and research papers.\\"", "\\"Breast Cancer is a medical condition that was studied in several papers.\\"", "\\"Breast Cancer is a type of cancer studied in the provided text.\\"", "\\"Breast Cancer is a type of cancer studied in various papers.\\"", "\\"Breast Cancer is a type of cancer that affects the breast tissue.\\"", "\\"Breast Cancer is a type of cancer that affects the breast, with a risk of recurrence and potential survival benefits from extended adjuvant endocrine therapy.\\"", "\\"Breast Cancer is a type of cancer that affects the breast.\\"", "\\"Breast Cancer is a type of cancer that has improved treatment outcomes over the past two decades.\\"", "\\"Breast Cancer is a type of cancer that is studied in the provided articles.\\"", "\\"Breast Cancer is a type of cancer that is the subject of multiple studies.\\"", "\\"Breast Cancer is a type of cancer that is treated with Pazopanib and Lapatinib.\\"", "\\"Breast Cancer is a type of cancer that requires treatment.\\"", "\\"Breast Cancer is a type of cancer that was studied in the presented research.\\"", "\\"Breast Cancer is the disease being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Breast Cancer refers to a specific type of cancer.\\"", "\\"Breast cancer is a concept that is being researched and treated using various technologies and treatments.\\"", "\\"Breast cancer is a disease being treated with various systemic treatments.\\"", "\\"Breast cancer is a type of cancer that affects the breast.\\"", "\\"Breast cancer is a type of cancer that affects women and is treated with various therapies.\\"", "\\"Breast cancer is a type of cancer that affects women.\\"", "\\"Breast cancer is a type of cancer that is discussed in the text.\\"", "\\"Breast cancer is the disease being discussed, including IBC and non-IBC.\\"", "\\"Breast cancer is the disease being treated in the NeoSphere trial.\\"", "\\"Breast cancer is the disease being treated with T-DM1 and other therapies.\\"", "\\"breast cancer is a type of cancer that is treated with various therapies.\\"", "\\"breast cancer is an event or condition being researched and treated.\\""]\n#######\nOutput:\n'}
+23:34:56,459 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,508 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,529 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"VICENTE VALERO\\""\nDescription List: ["", "\\"Vicente Valero has been with The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, and is involved in breast cancer research.\\"", "\\"Vicente Valero is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:56,529 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,628 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,634 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BORA LIM\\""\nDescription List: ["\\"Bora Lim is a translational investigator at The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, seeking to discover novel therapeutic strategies to halt or treat aggressive breast cancer.\\"", "\\"Bora Lim is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:56,634 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,753 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,761 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"TRIMODALITY TREATMENT\\""\nDescription List: ["\\"Trimodality Treatment is a treatment approach for IBC that involves a composite of systemic treatment, surgery, and radiation.\\"", "\\"Trimodality Treatment is a treatment approach for Inflammatory Breast Cancer that involves a composite of systemic treatment, surgery, and radiation.\\""]\n#######\nOutput:\n'}
+23:34:56,762 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,850 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,855 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"NAOTO T. UENO\\""\nDescription List: ["", "\\"Naoto T. Ueno is a professor of medicine at The University of Texas MD Anderson Cancer Center, specializing in IBC, TNBC, and metastatic breast cancer.\\"", "\\"Naoto T. Ueno is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:56,856 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:56,905 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:56,912 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SUDPREEDA CHAINITIKUN\\""\nDescription List: ["", "\\"Sudpreeda Chainitikun is a medical oncologist with a fellowship in medical oncology.\\"", "\\"Sudpreeda Chainitikun is a person who graduated with a fellowship in medical oncology.\\""]\n#######\nOutput:\n'}
+23:34:56,912 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:57,72 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:57,78 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SYSTEMIC TREATMENT\\""\nDescription List: ["\\"Systemic Treatment is a type of treatment for IBC that involves chemotherapy and targeted therapies.\\"", "\\"Systemic Treatment refers to the use of medications to treat cancer.\\"", "\\"Systemic treatment is a type of treatment used for breast cancer, including chemotherapy and targeted therapy.\\""]\n#######\nOutput:\n'}
+23:34:57,78 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:57,213 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:57,230 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"INFLAMMATORY BREAST CANCER\\""\nDescription List: ["\\"Inflammatory Breast Cancer is a rare and aggressive disease.\\"", "\\"Inflammatory Breast Cancer is a rare and aggressive form of breast cancer.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer characterized by rapid onset and aggressive progression.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer mentioned in several research papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in various papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that was studied in the presented research.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer.\\"", "\\"Inflammatory Breast Cancer is an event that is the subject of various studies and consensus statements.\\"", "\\"Inflammatory Breast Cancer refers to a specific type of breast cancer.\\"", "\\"Inflammatory breast cancer is a type of breast cancer that is characterized by rapid growth and spread of cancer cells.\\"", "\\"inflammatory breast cancer is a type of breast cancer characterized by rapid growth and spread of cancer cells.\\""]\n#######\nOutput:\n'}
+23:34:57,231 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:57,258 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:57,265 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"THE UNIVERSITY OF TEXAS MD ANDERSON CANCER CENTER\\""\nDescription List: ["", "\\"The University of Texas MD Anderson Cancer Center is a cancer center that provides treatment for various types of cancer.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer center where Sudpreeda Chainitikun is currently working.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center in Houston, Texas, USA.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center where Vicente Valero and Naoto T. Ueno work.\\"", "\\"The University of Texas MD Anderson Cancer Center is a medical institution where Naoto T. Ueno works as a professor of medicine.\\"", "\\"The University of Texas MD Anderson Cancer Center is the institution where the authors are affiliated.\\""]\n#######\nOutput:\n'}
+23:34:57,265 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:57,397 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:57,400 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SURVIVAL OUTCOMES\\""\nDescription List: ["\\"Survival Outcomes refer to the length of time a patient with IBC survives after treatment.\\"", "\\"Survival outcomes are being improved with the use of systemic treatments for breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:57,400 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 2/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,119 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,126 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"NAOTO T. UENO\\""\nDescription List: ["", "\\"Naoto T. Ueno is a professor of medicine at The University of Texas MD Anderson Cancer Center, specializing in IBC, TNBC, and metastatic breast cancer.\\"", "\\"Naoto T. Ueno is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:59,127 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,422 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,427 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"VICENTE VALERO\\""\nDescription List: ["", "\\"Vicente Valero has been with The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, and is involved in breast cancer research.\\"", "\\"Vicente Valero is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:59,427 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,456 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,461 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"TRIMODALITY TREATMENT\\""\nDescription List: ["\\"Trimodality Treatment is a treatment approach for IBC that involves a composite of systemic treatment, surgery, and radiation.\\"", "\\"Trimodality Treatment is a treatment approach for Inflammatory Breast Cancer that involves a composite of systemic treatment, surgery, and radiation.\\""]\n#######\nOutput:\n'}
+23:34:59,462 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,606 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,609 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"INFLAMMATORY BREAST CANCER\\""\nDescription List: ["\\"Inflammatory Breast Cancer is a rare and aggressive disease.\\"", "\\"Inflammatory Breast Cancer is a rare and aggressive form of breast cancer.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer characterized by rapid onset and aggressive progression.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer mentioned in several research papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in various papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that was studied in the presented research.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer.\\"", "\\"Inflammatory Breast Cancer is an event that is the subject of various studies and consensus statements.\\"", "\\"Inflammatory Breast Cancer refers to a specific type of breast cancer.\\"", "\\"Inflammatory breast cancer is a type of breast cancer that is characterized by rapid growth and spread of cancer cells.\\"", "\\"inflammatory breast cancer is a type of breast cancer characterized by rapid growth and spread of cancer cells.\\""]\n#######\nOutput:\n'}
+23:34:59,609 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,613 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,617 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BORA LIM\\""\nDescription List: ["\\"Bora Lim is a translational investigator at The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, seeking to discover novel therapeutic strategies to halt or treat aggressive breast cancer.\\"", "\\"Bora Lim is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:34:59,617 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:34:59,660 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:34:59,664 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BREAST CANCER\\""\nDescription List: ["\\"Breast Cancer is a disease mentioned in several research papers.\\"", "\\"Breast Cancer is a disease that Inflammatory Breast Cancer is a subtype of.\\"", "\\"Breast Cancer is a disease that is being studied in the provided articles.\\"", "\\"Breast Cancer is a disease that is the focus of multiple studies and research papers.\\"", "\\"Breast Cancer is a medical condition that was studied in several papers.\\"", "\\"Breast Cancer is a type of cancer studied in the provided text.\\"", "\\"Breast Cancer is a type of cancer studied in various papers.\\"", "\\"Breast Cancer is a type of cancer that affects the breast tissue.\\"", "\\"Breast Cancer is a type of cancer that affects the breast, with a risk of recurrence and potential survival benefits from extended adjuvant endocrine therapy.\\"", "\\"Breast Cancer is a type of cancer that affects the breast.\\"", "\\"Breast Cancer is a type of cancer that has improved treatment outcomes over the past two decades.\\"", "\\"Breast Cancer is a type of cancer that is studied in the provided articles.\\"", "\\"Breast Cancer is a type of cancer that is the subject of multiple studies.\\"", "\\"Breast Cancer is a type of cancer that is treated with Pazopanib and Lapatinib.\\"", "\\"Breast Cancer is a type of cancer that requires treatment.\\"", "\\"Breast Cancer is a type of cancer that was studied in the presented research.\\"", "\\"Breast Cancer is the disease being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Breast Cancer refers to a specific type of cancer.\\"", "\\"Breast cancer is a concept that is being researched and treated using various technologies and treatments.\\"", "\\"Breast cancer is a disease being treated with various systemic treatments.\\"", "\\"Breast cancer is a type of cancer that affects the breast.\\"", "\\"Breast cancer is a type of cancer that affects women and is treated with various therapies.\\"", "\\"Breast cancer is a type of cancer that affects women.\\"", "\\"Breast cancer is a type of cancer that is discussed in the text.\\"", "\\"Breast cancer is the disease being discussed, including IBC and non-IBC.\\"", "\\"Breast cancer is the disease being treated in the NeoSphere trial.\\"", "\\"Breast cancer is the disease being treated with T-DM1 and other therapies.\\"", "\\"breast cancer is a type of cancer that is treated with various therapies.\\"", "\\"breast cancer is an event or condition being researched and treated.\\""]\n#######\nOutput:\n'}
+23:34:59,664 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:00,16 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:00,29 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SUDPREEDA CHAINITIKUN\\""\nDescription List: ["", "\\"Sudpreeda Chainitikun is a medical oncologist with a fellowship in medical oncology.\\"", "\\"Sudpreeda Chainitikun is a person who graduated with a fellowship in medical oncology.\\""]\n#######\nOutput:\n'}
+23:35:00,30 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:00,249 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:00,252 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SYSTEMIC TREATMENT\\""\nDescription List: ["\\"Systemic Treatment is a type of treatment for IBC that involves chemotherapy and targeted therapies.\\"", "\\"Systemic Treatment refers to the use of medications to treat cancer.\\"", "\\"Systemic treatment is a type of treatment used for breast cancer, including chemotherapy and targeted therapy.\\""]\n#######\nOutput:\n'}
+23:35:00,252 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:00,372 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:00,376 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SURVIVAL OUTCOMES\\""\nDescription List: ["\\"Survival Outcomes refer to the length of time a patient with IBC survives after treatment.\\"", "\\"Survival outcomes are being improved with the use of systemic treatments for breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:00,377 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:00,407 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:00,409 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"THE UNIVERSITY OF TEXAS MD ANDERSON CANCER CENTER\\""\nDescription List: ["", "\\"The University of Texas MD Anderson Cancer Center is a cancer center that provides treatment for various types of cancer.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer center where Sudpreeda Chainitikun is currently working.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center in Houston, Texas, USA.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center where Vicente Valero and Naoto T. Ueno work.\\"", "\\"The University of Texas MD Anderson Cancer Center is a medical institution where Naoto T. Ueno works as a professor of medicine.\\"", "\\"The University of Texas MD Anderson Cancer Center is the institution where the authors are affiliated.\\""]\n#######\nOutput:\n'}
+23:35:00,410 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 3/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:03,529 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:03,543 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"NAOTO T. UENO\\""\nDescription List: ["", "\\"Naoto T. Ueno is a professor of medicine at The University of Texas MD Anderson Cancer Center, specializing in IBC, TNBC, and metastatic breast cancer.\\"", "\\"Naoto T. Ueno is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:03,543 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:03,777 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:03,781 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"VICENTE VALERO\\""\nDescription List: ["", "\\"Vicente Valero has been with The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, and is involved in breast cancer research.\\"", "\\"Vicente Valero is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:03,781 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:04,224 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:04,226 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BORA LIM\\""\nDescription List: ["\\"Bora Lim is a translational investigator at The University of Texas MD Anderson Cancer Center, Houston, Texas, USA, seeking to discover novel therapeutic strategies to halt or treat aggressive breast cancer.\\"", "\\"Bora Lim is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:04,226 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:04,370 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:04,374 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"TRIMODALITY TREATMENT\\""\nDescription List: ["\\"Trimodality Treatment is a treatment approach for IBC that involves a composite of systemic treatment, surgery, and radiation.\\"", "\\"Trimodality Treatment is a treatment approach for Inflammatory Breast Cancer that involves a composite of systemic treatment, surgery, and radiation.\\""]\n#######\nOutput:\n'}
+23:35:04,374 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:04,716 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:04,721 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"BREAST CANCER\\""\nDescription List: ["\\"Breast Cancer is a disease mentioned in several research papers.\\"", "\\"Breast Cancer is a disease that Inflammatory Breast Cancer is a subtype of.\\"", "\\"Breast Cancer is a disease that is being studied in the provided articles.\\"", "\\"Breast Cancer is a disease that is the focus of multiple studies and research papers.\\"", "\\"Breast Cancer is a medical condition that was studied in several papers.\\"", "\\"Breast Cancer is a type of cancer studied in the provided text.\\"", "\\"Breast Cancer is a type of cancer studied in various papers.\\"", "\\"Breast Cancer is a type of cancer that affects the breast tissue.\\"", "\\"Breast Cancer is a type of cancer that affects the breast, with a risk of recurrence and potential survival benefits from extended adjuvant endocrine therapy.\\"", "\\"Breast Cancer is a type of cancer that affects the breast.\\"", "\\"Breast Cancer is a type of cancer that has improved treatment outcomes over the past two decades.\\"", "\\"Breast Cancer is a type of cancer that is studied in the provided articles.\\"", "\\"Breast Cancer is a type of cancer that is the subject of multiple studies.\\"", "\\"Breast Cancer is a type of cancer that is treated with Pazopanib and Lapatinib.\\"", "\\"Breast Cancer is a type of cancer that requires treatment.\\"", "\\"Breast Cancer is a type of cancer that was studied in the presented research.\\"", "\\"Breast Cancer is the disease being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Breast Cancer refers to a specific type of cancer.\\"", "\\"Breast cancer is a concept that is being researched and treated using various technologies and treatments.\\"", "\\"Breast cancer is a disease being treated with various systemic treatments.\\"", "\\"Breast cancer is a type of cancer that affects the breast.\\"", "\\"Breast cancer is a type of cancer that affects women and is treated with various therapies.\\"", "\\"Breast cancer is a type of cancer that affects women.\\"", "\\"Breast cancer is a type of cancer that is discussed in the text.\\"", "\\"Breast cancer is the disease being discussed, including IBC and non-IBC.\\"", "\\"Breast cancer is the disease being treated in the NeoSphere trial.\\"", "\\"Breast cancer is the disease being treated with T-DM1 and other therapies.\\"", "\\"breast cancer is a type of cancer that is treated with various therapies.\\"", "\\"breast cancer is an event or condition being researched and treated.\\""]\n#######\nOutput:\n'}
+23:35:04,721 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:04,782 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:04,786 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"INFLAMMATORY BREAST CANCER\\""\nDescription List: ["\\"Inflammatory Breast Cancer is a rare and aggressive disease.\\"", "\\"Inflammatory Breast Cancer is a rare and aggressive form of breast cancer.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer being studied in the context of high-dose chemotherapy with autologous hematopoietic stem-cell support.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer characterized by rapid onset and aggressive progression.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer mentioned in several research papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer studied in various papers.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided articles.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that is studied in the provided text.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer that was studied in the presented research.\\"", "\\"Inflammatory Breast Cancer is a type of breast cancer.\\"", "\\"Inflammatory Breast Cancer is an event that is the subject of various studies and consensus statements.\\"", "\\"Inflammatory Breast Cancer refers to a specific type of breast cancer.\\"", "\\"Inflammatory breast cancer is a type of breast cancer that is characterized by rapid growth and spread of cancer cells.\\"", "\\"inflammatory breast cancer is a type of breast cancer characterized by rapid growth and spread of cancer cells.\\""]\n#######\nOutput:\n'}
+23:35:04,786 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:04,847 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:04,850 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SYSTEMIC TREATMENT\\""\nDescription List: ["\\"Systemic Treatment is a type of treatment for IBC that involves chemotherapy and targeted therapies.\\"", "\\"Systemic Treatment refers to the use of medications to treat cancer.\\"", "\\"Systemic treatment is a type of treatment used for breast cancer, including chemotherapy and targeted therapy.\\""]\n#######\nOutput:\n'}
+23:35:04,850 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:05,162 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:05,166 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SUDPREEDA CHAINITIKUN\\""\nDescription List: ["", "\\"Sudpreeda Chainitikun is a medical oncologist with a fellowship in medical oncology.\\"", "\\"Sudpreeda Chainitikun is a person who graduated with a fellowship in medical oncology.\\""]\n#######\nOutput:\n'}
+23:35:05,166 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:05,251 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:05,254 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"THE UNIVERSITY OF TEXAS MD ANDERSON CANCER CENTER\\""\nDescription List: ["", "\\"The University of Texas MD Anderson Cancer Center is a cancer center that provides treatment for various types of cancer.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer center where Sudpreeda Chainitikun is currently working.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center in Houston, Texas, USA.\\"", "\\"The University of Texas MD Anderson Cancer Center is a cancer research and treatment center where Vicente Valero and Naoto T. Ueno work.\\"", "\\"The University of Texas MD Anderson Cancer Center is a medical institution where Naoto T. Ueno works as a professor of medicine.\\"", "\\"The University of Texas MD Anderson Cancer Center is the institution where the authors are affiliated.\\""]\n#######\nOutput:\n'}
+23:35:05,254 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:05,406 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:05,411 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"SURVIVAL OUTCOMES\\""\nDescription List: ["\\"Survival Outcomes refer to the length of time a patient with IBC survives after treatment.\\"", "\\"Survival outcomes are being improved with the use of systemic treatments for breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:05,411 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:12,716 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+23:35:12,722 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"NAOTO T. UENO\\""\nDescription List: ["", "\\"Naoto T. Ueno is a professor of medicine at The University of Texas MD Anderson Cancer Center, specializing in IBC, TNBC, and metastatic breast cancer.\\"", "\\"Naoto T. Ueno is an author of a review on systemic treatment for inflammatory breast cancer.\\""]\n#######\nOutput:\n'}
+23:35:12,722 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/5 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+23:35:12,737 datashaper.workflow.workflow ERROR Error executing verb "summarize_descriptions" in create_summarized_entities: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01j1m7ha6hevrb19g7knxdmps3` on tokens per minute (TPM): Limit 30000, Used 50519, Requested 236. Please try again in 41.511s. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 415, in _execute_verb
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 183, in summarize_descriptions
+    results = [
+              ^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 184, in <listcomp>
+    await get_resolved_entities(row, semaphore) for row in output.itertuples()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 147, in get_resolved_entities
+    results = await asyncio.gather(*futures)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 339, in __wakeup
+    future.result()
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 167, in do_summarize_descriptions
+    results = await strategy_exec(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\strategies\graph_intelligence\run_graph_intelligence.py", line 34, in run
+    return await run_summarize_descriptions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\strategies\graph_intelligence\run_graph_intelligence.py", line 67, in run_summarize_descriptions
+    result = await extractor(items=items, descriptions=descriptions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 73, in __call__
+    result = await self._summarize_descriptions(items, descriptions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 106, in _summarize_descriptions
+    result = await self._summarize_descriptions_with_llm(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 125, in _summarize_descriptions_with_llm
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\_asyncio.py", line 71, in __anext__
+    do = self.iter(retry_state=self._retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 151, in do_attempt
+    await sleep_for(sleep_time)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_chat_llm.py", line 55, in _execute_llm
+    completion = await self.client.chat.completions.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions.py", line 1289, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1519, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01j1m7ha6hevrb19g7knxdmps3` on tokens per minute (TPM): Limit 30000, Used 50519, Requested 236. Please try again in 41.511s. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+23:35:12,816 graphrag.index.reporting.file_workflow_callbacks INFO Error executing verb "summarize_descriptions" in create_summarized_entities: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01j1m7ha6hevrb19g7knxdmps3` on tokens per minute (TPM): Limit 30000, Used 50519, Requested 236. Please try again in 41.511s. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}} details=None
+23:35:12,851 graphrag.index.run ERROR error running workflow create_summarized_entities
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\run.py", line 323, in run_pipeline
+    result = await workflow.run(context, callbacks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 369, in run
+    timing = await self._execute_verb(node, context, callbacks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 415, in _execute_verb
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 183, in summarize_descriptions
+    results = [
+              ^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 184, in <listcomp>
+    await get_resolved_entities(row, semaphore) for row in output.itertuples()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 147, in get_resolved_entities
+    results = await asyncio.gather(*futures)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 339, in __wakeup
+    future.result()
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\description_summarize.py", line 167, in do_summarize_descriptions
+    results = await strategy_exec(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\strategies\graph_intelligence\run_graph_intelligence.py", line 34, in run
+    return await run_summarize_descriptions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\entities\summarize\strategies\graph_intelligence\run_graph_intelligence.py", line 67, in run_summarize_descriptions
+    result = await extractor(items=items, descriptions=descriptions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 73, in __call__
+    result = await self._summarize_descriptions(items, descriptions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 106, in _summarize_descriptions
+    result = await self._summarize_descriptions_with_llm(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\graph\extractors\summarize\description_summary_extractor.py", line 125, in _summarize_descriptions_with_llm
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\_asyncio.py", line 71, in __anext__
+    do = self.iter(retry_state=self._retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 151, in do_attempt
+    await sleep_for(sleep_time)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_chat_llm.py", line 55, in _execute_llm
+    completion = await self.client.chat.completions.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions.py", line 1289, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1519, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01j1m7ha6hevrb19g7knxdmps3` on tokens per minute (TPM): Limit 30000, Used 50519, Requested 236. Please try again in 41.511s. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+23:35:12,867 graphrag.index.reporting.file_workflow_callbacks INFO Error running pipeline! details=None

@@ -1,0 +1,613 @@
+11:50:42,408 graphrag.config.read_dotenv INFO Loading pipeline .env file
+11:50:42,422 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 56",
+        "type": "openai_chat",
+        "model": "llama3-8b-8192",
+        "max_tokens": 3000,
+        "request_timeout": 300.0,
+        "api_base": "https://api.groq.com/openai/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 5,
+        "max_retry_wait": 20.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 5
+    },
+    "parallelization": {
+        "stagger": 0.5,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": ".",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_embedding",
+            "model": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q2_K.gguf",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:1234/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 5
+        },
+        "parallelization": {
+            "stagger": 0.5,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": false,
+        "raw_entities": false,
+        "top_level_nodes": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 5
+        },
+        "parallelization": {
+            "stagger": 0.5,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 5
+        },
+        "parallelization": {
+            "stagger": 0.5,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 5
+        },
+        "parallelization": {
+            "stagger": 0.5,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "llama3-8b-8192",
+            "max_tokens": 3000,
+            "request_timeout": 300.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 5,
+            "max_retry_wait": 20.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 5
+        },
+        "parallelization": {
+            "stagger": 0.5,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "max_tokens": 3000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+11:50:42,431 graphrag.index.create_pipeline_config INFO skipping workflows 
+11:50:42,438 graphrag.index.run INFO Running pipeline
+11:50:42,438 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at output\20240715-115042\artifacts
+11:50:42,439 graphrag.index.input.load_input INFO loading input from root_dir=input
+11:50:42,439 graphrag.index.input.load_input INFO using file storage for input
+11:50:42,441 graphrag.index.storage.file_pipeline_storage INFO search input for files matching .*\.txt$
+11:50:42,442 graphrag.index.input.text INFO found text files from input, found [('breast_cancer.txt', {})]
+11:50:42,455 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+11:50:42,455 graphrag.index.run INFO Final # of rows loaded: 1
+11:50:42,740 graphrag.index.run INFO Running workflow: create_base_text_units...
+11:50:42,740 graphrag.index.run INFO dependencies for create_base_text_units: []
+11:50:42,757 datashaper.workflow.workflow INFO executing verb orderby
+11:50:42,815 datashaper.workflow.workflow INFO executing verb zip
+11:50:42,828 datashaper.workflow.workflow INFO executing verb aggregate_override
+11:50:42,855 datashaper.workflow.workflow INFO executing verb chunk
+11:50:43,162 datashaper.workflow.workflow INFO executing verb select
+11:50:43,169 datashaper.workflow.workflow INFO executing verb unroll
+11:50:43,180 datashaper.workflow.workflow INFO executing verb rename
+11:50:43,189 datashaper.workflow.workflow INFO executing verb genid
+11:50:43,204 datashaper.workflow.workflow INFO executing verb unzip
+11:50:43,219 datashaper.workflow.workflow INFO executing verb copy
+11:50:43,231 datashaper.workflow.workflow INFO executing verb filter
+11:50:43,297 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+11:50:43,732 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+11:50:43,732 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+11:50:43,733 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+11:50:43,847 datashaper.workflow.workflow INFO executing verb entity_extract
+11:50:43,876 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=https://api.groq.com/openai/v1
+11:50:43,893 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for llama3-8b-8192: TPM=0, RPM=0
+11:50:43,894 graphrag.index.llm.load_llm INFO create concurrency limiter for llama3-8b-8192: 5
+11:50:44,284 datashaper.workflow.workflow INFO executing verb merge_graphs
+11:50:44,454 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+11:50:44,801 graphrag.index.run INFO Running workflow: create_summarized_entities...
+11:50:44,801 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+11:50:44,802 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+11:50:44,871 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+11:50:46,337 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_summarized_entities.parquet
+11:50:46,702 graphrag.index.run INFO Running workflow: create_base_entity_graph...
+11:50:46,716 graphrag.index.run INFO dependencies for create_base_entity_graph: ['create_summarized_entities']
+11:50:46,717 graphrag.index.run INFO read table from storage: create_summarized_entities.parquet
+11:50:46,776 datashaper.workflow.workflow INFO executing verb cluster_graph
+11:50:47,275 datashaper.workflow.workflow INFO executing verb select
+11:50:47,282 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+11:50:47,604 graphrag.index.run INFO Running workflow: create_final_entities...
+11:50:47,604 graphrag.index.run INFO dependencies for create_final_entities: ['create_base_entity_graph']
+11:50:47,605 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+11:50:47,694 datashaper.workflow.workflow INFO executing verb unpack_graph
+11:50:47,928 datashaper.workflow.workflow INFO executing verb rename
+11:50:47,941 datashaper.workflow.workflow INFO executing verb select
+11:50:47,952 datashaper.workflow.workflow INFO executing verb dedupe
+11:50:47,976 datashaper.workflow.workflow INFO executing verb rename
+11:50:47,986 datashaper.workflow.workflow INFO executing verb filter
+11:50:48,50 datashaper.workflow.workflow INFO executing verb text_split
+11:50:48,81 datashaper.workflow.workflow INFO executing verb drop
+11:50:48,97 datashaper.workflow.workflow INFO executing verb merge
+11:50:48,357 datashaper.workflow.workflow INFO executing verb text_embed
+11:50:48,361 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:1234/v1
+11:50:48,373 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q2_K.gguf: TPM=0, RPM=0
+11:50:48,373 graphrag.index.llm.load_llm INFO create concurrency limiter for nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q2_K.gguf: 5
+11:50:48,496 graphrag.index.verbs.text.embed.strategies.openai INFO embedding 969 inputs via 969 snippets using 61 batches. max_batch_size=16, max_tokens=8191
+11:50:51,146 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:50:51,150 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:50:54,519 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:50:54,627 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:50:59,64 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:50:59,437 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:51:06,57 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:51:06,510 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:51:16,689 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:51:16,984 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:51:35,694 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:51:35,975 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:51:58,20 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:51:58,316 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:52:20,350 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:52:20,661 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:52:42,661 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:52:42,956 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ZAKS T":Here is a comprehensive summary of the data:\n\nZaks T is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"DESILVIO M":Here is a comprehensive summary of the data:\n\nDeSilvio M is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SALAZAR V":Here is a comprehensive summary of the data:\n\nSalazar V is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"SPECTOR N":Here is a comprehensive summary of the data:\n\nSPECTOR N is a researcher who has been involved in the GeparQuinto study and has also authored a study on neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer.', '"G5":"G5 is a study evaluating the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"ALVAREZ RH":Here is a comprehensive summary of the data:\n\nALVAREZ RH is an author of research papers on inflammatory breast cancer. Specifically, Alvarez RH is an author of a study on the limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.', '"ENSOR J":"Ensor J is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"HUONG TLP":"Huong TLP is an author of a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"JOHNSTON S":"Johnston S is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"TRUDEAU M":"Trudeau M is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"KAUFMAN B":"Kaufman B is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"BLACKWELL K":"Blackwell K is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"LORUSSO P":"LoRusso P is an author of a study on predictive biomarker profiles for response targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."', '"J CLIN ONCOL CONF":"J Clin Oncol Conf is a conference that presented a study on limited efficacy and significant toxicities of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients."', '"PHASE II STUDY":"Phase II study is a type of clinical trial that evaluated the efficacy and safety of lapatinib plus chemotherapy as neoadjuvant therapy for HER2-positive inflammatory breast cancer patients.""Phase II study is a type of clinical trial that evaluated the efficacy and safety of neoadjuvant lapatinib plus paclitaxel in patients with inflammatory breast cancer."', '"PREDICTIVE BIOMARKER PROFILES":"Predictive biomarker profiles refer to the identification of biomarkers that can predict response to treatment targeting human epidermal growth factor receptor 2 (HER-2) in advanced inflammatory breast cancer patients."']}
+11:53:04,980 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HER2+ EARLY BREAST CANCER":"HER2+ early breast cancer is a condition being researched and treated in the NeoALTTO trial."', '"PHER2":"pHER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHER3":"pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER2":"phosphorylated HER2 is a concept or marker that is associated with response to lapatinib treatment."', '"PHOSPHORYLATED HER3":"phosphorylated HER3 is a concept or marker that is associated with response to lapatinib treatment."', '"CO-EXPRESSION":"co-expression of phosphorylated HER2 and pHER3 is a concept or marker that is associated with response to lapatinib treatment."', '"DOSE REDUCTION":"dose reduction is an event that may occur due to toxicity of treatment."', '"DISCONTINUATION OF TREATMENT":"discontinuation of treatment is an event that may occur due to toxicity of treatment."', '"TOXICITY":"toxicity is a concept or marker that is associated with the side effects of treatment."', '"RESPONSE RATE":Here is a comprehensive summary of the data:\n\nThe "RESPONSE RATE" refers to the percentage of participants or patients who respond to a treatment. It is a concept or marker that is associated with the effectiveness of treatment. In other words, response rate measures the proportion of individuals who exhibit a positive outcome or improvement in response to a particular treatment or intervention.', '"PREDICTIVE MARKER":"predictive marker is a concept or marker that is associated with the likelihood of response to treatment."', '"PCR RATE":Here is a comprehensive summary of the data:\n\nThe "PCR Rate" is a concept or marker that measures the effectiveness of treatment, specifically in the context of breast cancer and inflammatory breast cancer (IBC). It is an endpoint in clinical trials for IBC and refers to the percentage of patients who achieve a pathologic complete response (pCR) to treatment. In other words, the pCR rate is the rate of patients who achieve a complete response to treatment, as determined by a pathologic examination of the breast tissue. This rate is used to assess the effectiveness of treatments for breast cancer and IBC, providing valuable information for healthcare professionals and researchers.', '"EARLY BREAST CANCER":"early breast cancer is an event or condition being researched and treated."', '"T-DM1":Here is a comprehensive summary of the data:\n\n"T-DM1" is a medication used in the treatment of breast cancer, specifically in the treatment of HER2+ breast cancer. It is a type of antibody-drug conjugate, which is a targeted therapy that combines an antibody with a chemotherapy drug to deliver the treatment directly to the cancer cells. T-DM1 is used to treat HER2+ breast cancer, including HER2+ inflammatory breast cancer (IBC) cases without a pathologic complete response (pCR).', '"KRISTINE TRIAL":Here is a comprehensive summary of the data:\n\nThe KRISTINE trial is a randomized phase 3 trial that evaluated the efficacy of neoadjuvant treatment with T-DM1 plus pertuzumab in patients with HER2+ breast cancer. Specifically, the trial aimed to assess the effectiveness of this combination therapy in treating HER2+ breast cancer.\n\nNote: I resolved the contradiction by combining the two descriptions to provide a single, coherent summary.', '"TCHP REGIMEN":Here is a comprehensive summary of the data:\n\nThe "TCHP REGIMEN" is a chemotherapy regimen used to treat breast cancer. Specifically, it is a combination therapy that includes trastuzumab and pertuzumab, two targeted therapies that work together to combat the disease.']}
+11:53:04,981 datashaper.workflow.workflow ERROR Error executing verb "text_embed" in create_final_entities: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1558, in _request
+    response = await self._client.send(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 415, in _execute_verb
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\text_embed.py", line 105, in text_embed
+    return await _text_embed_in_memory(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\text_embed.py", line 130, in _text_embed_in_memory
+    result = await strategy_exec(texts, callbacks, cache, strategy_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 61, in run
+    embeddings = await _execute(llm, text_batches, ticker, semaphore)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 105, in _execute
+    results = await asyncio.gather(*futures)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 339, in __wakeup
+    future.result()
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 99, in embed
+    chunk_embeddings = await llm(chunk)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\_asyncio.py", line 71, in __anext__
+    do = self.iter(retry_state=self._retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_embeddings_llm.py", line 36, in _execute_llm
+    embedding = await self.client.embeddings.create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\embeddings.py", line 215, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1519, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1592, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+11:53:05,80 graphrag.index.reporting.file_workflow_callbacks INFO Error executing verb "text_embed" in create_final_entities: Connection error. details=None
+11:53:05,125 graphrag.index.run ERROR error running workflow create_final_entities
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1558, in _request
+    response = await self._client.send(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\run.py", line 323, in run_pipeline
+    result = await workflow.run(context, callbacks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 369, in run
+    timing = await self._execute_verb(node, context, callbacks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\datashaper\workflow\workflow.py", line 415, in _execute_verb
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\text_embed.py", line 105, in text_embed
+    return await _text_embed_in_memory(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\text_embed.py", line 130, in _text_embed_in_memory
+    result = await strategy_exec(texts, callbacks, cache, strategy_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 61, in run
+    embeddings = await _execute(llm, text_batches, ticker, semaphore)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 105, in _execute
+    results = await asyncio.gather(*futures)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 339, in __wakeup
+    future.result()
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\index\verbs\text\embed\strategies\openai.py", line 99, in embed
+    chunk_embeddings = await llm(chunk)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\_asyncio.py", line 71, in __anext__
+    do = self.iter(retry_state=self._retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\base\base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\graphrag\llm\openai\openai_embeddings_llm.py", line 36, in _execute_llm
+    embedding = await self.client.embeddings.create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\embeddings.py", line 215, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1519, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pesankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1592, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+11:53:05,178 graphrag.index.reporting.file_workflow_callbacks INFO Error running pipeline! details=None

@@ -1,0 +1,1793 @@
+Update on systemic treatment for newly diagnosed inﬂammatory breast
+cancer
+Sudpreeda Chainitikun a,b, Sadia Saleem a,b, Bora Lim a,b, Vicente Valero a,b, Naoto T. Ueno a,b,⇑
+a Section of Translational Breast Cancer Research, Department of Breast Medical Oncology, The University of Texas MD Anderson Cancer Center, Houston, Texas 77030, USA
+b Morgan Welch Inﬂammatory Breast Cancer Research Program and Clinic, The University of Texas MD Anderson Cancer Center, Houston, Texas 77030, USA
+Keywords:
+Inﬂammatory breast cancer
+Chemotherapy
+Targeted therapy
+Immunotherapy
+Systemic therapy
+a b s t r a c t
+Background: Inﬂammatory breast cancer (IBC) is a rare and aggressive disease, accounting for 2–4% of
+new cases of breast cancer. Owing to its aggressive nature, IBC represent approximately 8–10% of breast
+cancer deaths. Management of IBC requires a multidisciplinary team for decision-making involving a
+composite of systemic treatment, surgery, and radiation, or ‘‘Trimodality Treatment.” Because of the rar-
+ity of the disease, systemic therapy of IBC traditionally has been extrapolated from non-IBC clinical trials.
+Aim of Review: The purpose of this review is to provide an overview of the development of systemic treat-
+ment of IBC from the past to the present by focusing on IBC clinical trials, including chemotherapy and
+targeted therapies.
+Key Scientiﬁc Concepts of Review: We discuss their effects on pathologic complete response (pCR) and sur-
+vival outcomes, the predictive markers, and the adverse events of these therapies. Further, we summa-
+rized the current standard treatment stratiﬁed by molecular subtypes based on clinical data. Finally,
+we discuss the future trend of systemic therapy, including immunotherapy and ongoing IBC clinical trials.
+under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Introduction
+Over the past two decades, treatment for breast cancer overall
+has improved, leading to excellent outcomes. Inﬂammatory breast
+https://doi.org/10.1016/j.jare.2020.08.014
+This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Peer review under responsibility of Cairo University.
+⇑Corresponding author at: Department of Breast Medical Oncology, Unit 1354,
+The University of Texas MD Anderson Cancer Center, 1515 Holcombe Blvd.,
+Houston, TX 77030, USA.
+E-mail address: nueno@mdanderson.org (N.T. Ueno).
+Journal of Advanced Research 29 (2021) 1–12
+Contents lists available at ScienceDirect
+Journal of Advanced Research
+journal homepage: www.elsevier.com/locate/jare
+cancer (IBC) is a unique, rare entity with more aggressive behavior
+and worse prognosis than non-IBC or locally advanced breast can-
+cer (LABC) [1]. In the United States, the incidence of IBC is 1.6–3.1
+per 100,000 women with a higher incidence among black women
+and younger women, but owing to its aggressive nature, IBC repre-
+sents approximately 8–10% of breast cancer deaths. [1,2]. Black
+women with IBC have worse survival than white women regard-
+less of hormone receptor (HR) status and age [3,4]. Asian women
+with IBC tend to have longer survival than white women [3]. The
+survival is signiﬁcantly shorter in IBC compared with non-IBC [5].
+The 5-year overall survival (OS) rate for stage IV IBC is only 25–33%
+[6]. For de novo stage IV disease, the median OS time is 2.27 years
+for IBC but 3.40 years for non-IBC [7]. For stage III disease, the med-
+ian OS is 4.75 years for IBC in contrast to 13.40 years for non-IBC
+[8]. Therefore, we classify IBC as a high-risk disease because of
+its high rate of distant metastasis (approximately 30–40%) at ﬁrst
+diagnosis, and approximately 80% of stage III IBC has clinical lymph
+node involvement [9,10].
+Deﬁnition of IBC
+According to the American Joint Committee on Cancer (8th edi-
+tion) [11], diagnostic criteria for IBC (T4d) are based on clinical
+diagnosis by a rapid onset of diffuse erythema and edema (or peau
+d’orange) involving approximately at least one-third of breast skin,
+with or without an underlying palpable mass. The skin changes
+may be due to lymphedema caused by tumor emboli within der-
+mal lymphatics, which may be present or absent in biopsy speci-
+mens. Although tumor emboli are a hallmark of IBC, only around
+75% of diagnosed IBC cases show tumor emboli on pathologic anal-
+ysis [12]. Interestingly, we classify the presence of tumor emboli in
+dermal lymphatics without any skin changes as non-IBC breast
+cancer [11]. The onset of symptoms in IBC should be rapid, within
+no more than 6 months [11,13].
+Subtypes and characteristics of IBC
+Like non-IBC, IBC can be categorized into four subtypes; hor-
+mone receptor-positive (HR+)/human epidermal growth factor
+receptor 2-negative (HER2), HR+/HER2-positive (HER2+), HR-
+negative (HR)/HER2+, and HR/HER2- (or triple-negative recep-
+tor status) [6,14,15]. Bone is the most common metastasis site in
+all the subtypes; liver metastasis has frequently occurred in the
+HER2+ subtype; and lung metastasis has frequently occurred in
+the triple-negative subtype. IBC has lung/pleural effusion metasta-
+sis around 21–29% [16]. As in non-IBC, triple-negative IBC has the
+worst survival outcomes, with a 5-year survival rate of less than
+30% [6,17]. Approximately 15% of IBC develop brain metastasis
+[18]. Data from the Surveillance, Epidemiology, and End Results
+(SEERs) database and our institute also showed the same results
+that triple-negative IBC has a higher rate of brain metastasis than
+non-IBC [18,19]. Our institute also reported that survival after
+brain metastasis in IBC was shortest in the triple-negative subtype,
+with a median OS of 3.8 months [18]. In contrast, after brain
+metastasis, HER2+ subtype IBC showed the longest median OS of
+16.6 months, and the improvement of survival in HER2+ subtype
+relates to the anti-HER2 therapy era [18].
+Pathological complete response
+Pathologic complete response (pCR) is a well-known prognostic
+marker of neoadjuvant therapy for breast cancer, including IBC. Its
+deﬁnition is the absence of residual invasive cancer in the com-
+plete resected breast specimen and all sampled regional lymph
+nodes following completion of neoadjuvant systemic therapy
+(ypT0/Tis ypN0 in American Joint Committee on Cancer staging
+system [11]). pCR predicts long-term survival outcomes, including
+event-free survival and OS [15,20–22]. Similar to non-IBC patients,
+IBC patients who experience pCR status have better survival than
+non-pCR, and those with HR/HER2+ IBC have the highest pCR rate
+among all the subtypes. However, triple-negative IBC remains to
+have a poor outcome despite achieving pCR [15,23].
+Treatment of IBC
+Historically, local treatment of IBC by surgery or radiation alone
+has shown poor results, with a 5-year OS rate of less than 5% [24].
+Systemic neoadjuvant regimens are a critical part of IBC treatment.
+Currently, the management of IBC requires a multidisciplinary
+team comprising a medical oncologist, surgeon, pathologist, diag-
+nostic radiologist, and radiation oncologist. The principal goal of
+this team is to improve the survival of IBC by determining the opti-
+mal combination of systemic treatment, surgery, and radiation, or
+‘‘trimodality treatment” [25].
+However, at present, even though all standard guidelines
+[26,27] have deﬁned IBC separately from non-IBC disease, the sys-
+temic treatment used in the clinic is still the same as that used for
+non-IBC. Current IBC systemic treatment has been extrapolated
+from non-IBC clinical trials and stratiﬁed by breast cancer molecu-
+lar subtypes the same way as in non-IBC. In recent years, clinical
+research, including clinical trials, has investigated the potential
+role of several new systemic regimens in patients with IBC, but
+quite limited the number of patients. In this review article, we
+summarize the clinical data, including clinical trial results, regard-
+ing systemic treatment speciﬁcally for IBC, and we discuss the efﬁ-
+cacy and toxicity of these treatments.
+Developments of systemic treatment for IBC
+Various systemic treatments have been used for breast cancer
+worldwide. The optimal selection of systemic treatment strategy
+depends on both tumor and patient characteristics. We discuss
+the systemic therapy of IBC from the past to the present
+(chemotherapy and targeted therapy eras). Further, we summarize
+the current standard treatment in real practice stratiﬁed by sub-
+types based on clinical trials. Finally, we provide the future direc-
+tion of systemic therapy (immunotherapy era).
+Chemotherapy
+A large retrospective study from MD Anderson reported that
+178
+IBC
+patients
+treated
+with
+upfront
+anthracycline-based
+chemotherapy, combined with radiation therapy with or without
+mastectomy, had an objective response rate of 74%, a median OS
+of 37 months, and a 10-year OS rate of 33% [22]. These results
+are consistent with those of other anthracycline-based studies in
+IBC, which have reported a 10-year OS rate of 27–35% [28–30].
+As in non-IBC, paclitaxel is well known as an active agent against
+breast cancer. Cristofanilli et al. [31] showed that adding taxane
+to a ﬂuorouracil, doxorubicin, and cyclophosphamide (FAC)–based
+regimen in 240 IBC patients improved the pCR rate from 10% to
+25% (p = 0.012). Paclitaxel addition regimen also had a numerically
+longer median OS in the study than did the FAC-based regimen
+alone (52 vs. 41 months, p = 0.11) and a statistically signiﬁcantly
+longer OS among estrogen receptor (ER)-negative (ER-) patients
+than other subtypes [31]. Furthermore, paclitaxel showed beneﬁt
+in
+anthracycline-refractory
+IBC,
+in
+which
+44%
+of
+IBC
+non-
+responders who treated with FAC regimen four cycles became
+resectable after treatment with paclitaxel [32].
+Many studies have demonstrated that increased dose intensity
+improves the efﬁcacy of chemotherapy in breast cancer [33]. For
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+2
+IBC, studies of chemotherapy dose intensity were undertaken
+based on data from prospective studies of non-IBC and reported
+results speciﬁc to an IBC cohort. Ditsch et al. [34] reported 101
+IBC patients treated preoperatively with either epirubicin followed
+by paclitaxel every 2 weeks (dose-dense sequential group) with
+granulocyte colony-stimulating factor (G-CSF) support or standard
+combination chemotherapy every 3 weeks. After surgery, all
+patients received adjuvant chemotherapy (cyclophosphamide,
+methotrexate, and 5-ﬂuorouracil), radiation therapy, and anti-
+hormonal therapy if clinically indicated. The dose-dense sequential
+group and the standard group did not signiﬁcantly differ in pCR
+rate (12% vs. 10%, respectively; odds ratio = 1.27; p = 0.33) or in
+OS (hazard ratio = 1.4, 95% CI 0.71–2.75, p = 0.327). Similarly, Ellis
+et al. [35] enrolled patients with high-risk breast cancer in a phase
+3 randomized clinical trial, including 115 patients with IBC and
+249 patients with LABC. All patients were randomized into two
+groups, treated with a neoadjuvant standard-dose (21-day) dox-
+orubicin and cyclophosphamide (AC) regimen or a weekly AC reg-
+imen with G-CSF support (dose-dense), and both groups were
+subsequently treated with weekly paclitaxel. The pCR rate in IBC
+patients was numerically higher in the dose-dense group com-
+pared with the standard, 21-day group, but the difference was
+not statistically signiﬁcant (27% vs. 13%, p = 0.60).
+The efﬁcacy of neoadjuvant chemotherapy (NAC) depends on
+the breast cancer subtypes, ER- IBC has a higher pCR rate than
+ER-positive IBC, as same as in non-IBC [36]. Response evaluation
+by imaging in the middle of NAC also predicts ﬁnal pathologic
+response in IBC; breast MRI, in particular, showed a better correla-
+tion than did mammography or sonography [37]. For predictive
+gene expression signatures, hyperactivation of IFN-a and hypoacti-
+vation of EGFR, p53, and TGF-b were associated with pCR in IBC
+after treatment with NAC [38]. This study also found that the pre-
+dictive gene signatures were signiﬁcantly enriched for immunity-
+related genes involved in CD8-positive T-cell lymphocyte activa-
+tion processes, suggesting that adaptive immunity determined
+response to chemotherapy in IBC [38].
+Today, there are no data from large randomized controlled trials
+for IBC; therefore, anthracycline- and taxane-based chemotherapy
+are still recommended as the backbone of primary chemotherapy
+regimens
+by
+international
+expert
+consensus.
+However,
+the
+chemotherapy schedule and dose density can differ between cen-
+ters where have their own IBC specialized clinics [39].
+High-dose chemotherapy with autologous hematopoietic stem cell
+transplant
+Before 2000, high-dose chemotherapy (HDCT) followed by
+autologous hematopoietic stem cell transplantation (AHSCT) was
+extensively investigated for IBC with the same rationale as that
+of studying dose-intensity relationships. In 1997, the International
+Blood and Marrow Transplant Registry reported a 3-year OS rate of
+52% in 253 IBC patients treated with HDCT with AHSCT [40]. A lar-
+ger and updated registry of HDCT with AHSCT, comprising 527 IBC
+patients and 2,860 non-IBC patients from the Center for Interna-
+tional Blood and Marrow Transplant Research, reported a 10-year
+OS rate of approximately 30% with no difference between IBC
+and non-IBC [41]. However, among non-metastatic patients with
+no evidence of disease at transplant, the 10-year OS was worse
+for IBC patients than for non-IBC patients (37% vs. 45%, respec-
+tively; p = 0.03). Multivariate analysis in this study showed worse
+outcomes for stage III IBC than for stage III non-IBC. Multiple
+single-arm phase 2 trials of AHSCT speciﬁcally for IBC patients
+have reported varying pCR rates of 17–39%, 3-year OS rates of
+68–72%, and favorable prognostic factors including HR positivity,
+the involvement of less than four axillary lymph nodes, and receipt
+of adjuvant radiation [42–44].
+Owing to the diversity of these pilot studies [42–44] of HDCT
+with AHSCT for IBC, the French PEGASE experience perform larger,
+randomized comparative studies to demonstrate the survival ben-
+eﬁt of HDCT with AHSCT for non-metastatic IBC: two phase 2 clin-
+ical trials (PEGASE 02 and PEGASE 05) and one phase 3 clinical trial
+(PEGASE 07). PEGASE 02 [45] treated 100 IBC patients with four
+cycles of high-dose FAC plus G-CSF and with the administration
+of AHSCT after cycles 3 and 4. The pCR rate was 32%, and the 3-
+year OS rate was 70%. Febrile neutropenia was the most frequent
+adverse event, resulting in 85% of rehospitalizations. One case
+had treatment-related death by septic shock. The phase 2 trial
+PEGASE 05 sought to determine the efﬁcacy of adding dose-
+dense docetaxel to the high-dose AC regimen with AHSCT. After
+54 patients were enrolled, the study was prematurely stopped
+owing to toxicity (eight cases had a severe infection, and two cases
+died of febrile neutropenia). In the 48 patients analyzed, the pCR
+rate was 30%, similar to that of PEGASE 02. The investigators con-
+cluded that adding dose-dense docetaxel did not improve the pCR
+rate and was too toxic [46,47].
+In the randomized clinical trial PEGASE 07 [48], 174 IBC patients
+were treated with HDCT, comprising epirubicin (150 mg/m2) and
+cyclophosphamide (4 g/m2), with G-CSF support for four cycles fol-
+lowed by AHSCT. After surgery and radiation, patients were ran-
+domized to either observation or adjuvant therapy with four
+cycles of docetaxel (85 mg/m2) and 5-ﬂuorouracil (3000 mg/m2),
+with continuous infusion for 4 days. There were no differences in
+5-year disease-free survival (DFS) (55.0% vs. 55.5%, respectively;
+hazard ratio = 0.947, 95% CI 0.61–1.48, p = 0.810) or in 5-year OS
+rate (70.2% vs. 70.0%, respectively; hazard ratio = 0.938, 95% CI
+0.55–1.60, p = 0.814). The pCR of both arms was 20%.
+Although many publications have shown the efﬁcacy of HDCT
+with AHSCT in IBC, the standard of care did not change because
+randomized trials of this approach showed a lack of positive bene-
+ﬁts, and the presence of toxic risks, including fatal infection, is a
+major problem. Also, the chemotherapy agents used in high-dose
+trials are currently not commonly used to treat IBC in the clinic.
+Furthermore, predictive biomarkers to guide the use of HDCT with
+AHSCT in IBC have not been discovered. Finally, HDCT was associ-
+ated with worse quality of life [49]. Therefore, there is no currently
+recommended role for this strategy for newly diagnosed IBC.
+Targeted therapy
+At present, there are limited targeted therapy studies speciﬁc to
+IBC. Because IBC classiﬁed as a high-risk disease, systemic targeted
+therapy of IBC has mainly based on extrapolation of data available
+from the high-risk group of non-IBC studies.
+a Trastuzumab
+IBC has higher rates of HER2 overexpression than does non-IBC,
+with an estimated prevalence of 25–35% in IBC [50–53], and tras-
+tuzumab has been approved for HER2+ disease in both early and
+metastatic stages. Many randomized controlled trials have con-
+ﬁrmed the survival beneﬁts of NAC combined with trastuzumab
+for patients with LABC, including IBC [54,55]. However, the number
+of IBC patients was limited in those trials. The NOAH study [54], a
+randomized phase 3 clinical trial, enrolled 235 patients with HER2
++ LABC (including 47 IBC patients) and evaluated the efﬁcacy of
+neoadjuvant trastuzumab plus chemotherapy compared with
+NAC alone. The NAC regimen was doxorubicin and paclitaxel for
+three cycles, followed by paclitaxel for four cycles, and then
+cyclophosphamide, methotrexate, and ﬂuorouracil for three cycles.
+Subgroup analysis in IBC showed that the addition of trastuzumab
+increased the 5-year event-free survival rate (64% vs. 24%, hazard
+ratio = 0.34, 95% CI 0.15–0.80) and 5-year OS rate (74% vs. 44%, haz-
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+3
+ard ratio = 0.38, 95% CI 0.15–0.95) without any serious cardiac
+events. The efﬁcacy of trastuzumab was conﬁrmed in single-arm
+studies speciﬁcally for IBC [56,57], which reported a high pCR rate
+of
+54–66%
+for
+patients
+with
+HER2+
+IBC
+treated
+with
+an
+anthracycline-containing regimen plus trastuzumab without rele-
+vant cardiac toxicity. The NOAH study also reported that the
+HER2+/HR subtype was a predictive marker for the efﬁcacy of
+trastuzumab addition, with a hazard ratio of 0.51 (95% CI 0.29–
+0.91) for OS and a hazard ratio of 0.58 (95% CI 0.35–0.94) for
+event-free survival. Now, trastuzumab is a part of the anti-HER2
+backbone for the HER2+ IBC.
+b Pertuzumab
+Pertuzumab is a humanized anti-HER2 monoclonal antibody
+that binds the HER2 receptor at a different epitope from that
+bound by trastuzumab, instead of binding to the subdomain II
+of the HER2 extracellular domain and preventing HER2 from
+dimerization with other ligands HER receptors, most notably
+HER3 receptor [58]. Like trastuzumab binding, pertuzumab bind-
+ing induces antibody-dependent cell-mediated cytotoxicity [59].
+Because of these similar but distinct mechanisms of binding to
+HER2 epitopes, the concept of the synergistic combination of per-
+tuzumab with trastuzumab was tested in clinical trials [55,58,60].
+In the NeoSphere trial [55,61], a phase 2 randomized neoadju-
+vant trial enrolled 417 patients with breast cancer, including 29
+IBC patients. All patients were randomized into four neoadjuvant
+arms: docetaxel plus trastuzumab, docetaxel plus trastuzumab,
+and pertuzumab (THP), trastuzumab and pertuzumab without doc-
+etaxel, and docetaxel and pertuzumab. After surgery, all patients
+were
+treated
+with
+adjuvant
+5-ﬂuorouracil,
+epirubicin,
+and
+cyclophosphamide (FEC) and adjuvant trastuzumab for 1 year.
+NeoSphere reported promising pCR rates: 45.8%, the highest, in
+the THP arm; 29.0% for docetaxel plus trastuzumab; 16.8% for tras-
+tuzumab and pertuzumab without docetaxel; and 24.0% for per-
+tuzumab plus docetaxel. Rates of cardiac adverse events were
+similar between all arms (4–5%). At the 5-year follow-up, Neo-
+Sphere [61] reported progression-free survival rates of 81% for doc-
+etaxel plus trastuzumab, 86% for THP, 73% for trastuzumab and
+pertuzumab without docetaxel, and 73% for pertuzumab plus
+docetaxel.
+TRYPHAENA [62], a randomized phase 2 study, evaluated the
+safety and tolerability of dual anti-HER2 antibodies combined with
+NAC in 225 patients, including 13 IBC patients. All patients were
+randomized into three groups: FEC regimen plus pertuzumab and
+trastuzumab followed by THP; FEC followed by THP; and docetaxel
+and carboplatin plus pertuzumab and trastuzumab (TCHP). The
+incidence of left ventricular ejection fraction (LVEF) declines was
+low, around 4–5% in each group. Interestingly, this study reported
+pCR rates of 50.7%, 45.3%, and 51.9%, respectively. At the 3-year
+follow-up for TRYPHAENA, DFS and OS did not signiﬁcantly differ
+between groups [63].
+Overmoyer et al. reported the efﬁcacy of neoadjuvant weekly
+paclitaxel combined with pertuzumab and trastuzumab, followed
+by surgery in only IBC patients. All patients received post-
+mastectomy radiation, maintenance pertuzumab and trastuzu-
+mab for 36 weeks, and an adjuvant AC regimen for the non-
+pCR case. This study was closed owing to slow accrual, with
+20 IBC patients. The pCR rate was 56%, and toxicity was minimal
+[64].
+Now, a regimen containing pertuzumab plus trastuzumab is a
+standard neoadjuvant treatment for HER2+ IBC. In contrast to
+non-IBC, IBC is classiﬁed as a high-risk disease, and escalation
+strategies are preferred over de-escalation strategies. Therefore,
+short-duration or lower amounts of anti-HER2 therapy should be
+avoided.
+c Lapatinib
+Lapatinib is a small-molecule tyrosine kinase inhibitor that
+blocks intracellular HER2 and EGFR (epidermal growth factor
+receptor) signaling pathways [65]. The GeparQuinto study [66], a
+randomized neoadjuvant phase 3 trial, enrolled 620 HER2+ breast
+cancer patients (including 83 IBC patents). They were then treated
+with four cycles of epirubicin and cyclophosphamide followed by
+four cycles of docetaxel combined throughout all cycles with either
+trastuzumab or lapatinib. The pCR rate was higher in the trastuzu-
+mab arm than in the lapatinib arm (30.3% vs. 22.7%, odds
+ratio = 0.68, 95% CI 0.47–0.97, p = 0.04). However, the trastuzumab
+and lapatinib arms did not differ in 3-year OS rate (91.7% vs. 93.6%,
+respectively; p = 0.297) [67]. Interestingly, the combination of NAC
+with lapatinib had a lower pCR rate than expected in HER2+
+patients. Similarly, a phase 2 IBC trial reported a low pCR rate of
+17.6% in 32 patients with HER2+ IBC treated with neoadjuvant
+paclitaxel and lapatinib [68]. Concerning adverse events seen with
+lapatinib included diarrhea and rash, found around 50% of cases
+and sometimes leading to dose reduction or discontinuation of
+treatment [66,68]. One IBC study of NAC plus lapatinib was prema-
+turely stopped owing to severe toxicity (>15% of patients) [69].
+Combination chemotherapy plus lapatinib is currently not recom-
+mended to treat newly diagnosed IBC due to a low response rate
+and concerning toxicity.
+Like trastuzumab, the HER2+ subtype is a strong predictive
+marker for lapatinib efﬁcacy [68]. One study also reported that
+co-expression of phosphorylated (p) HER2 and pHER3 in IBC
+patients was associated with response to lapatinib [70]. Further-
+more, a proof of concept for the synergistic combination of lapa-
+tinib and trastuzumab has been demonstrated in the clinical
+trial. The NeoALTTO trial [71] reported promising results of dual
+antibody treatment with trastuzumab plus lapatinib combined
+with paclitaxel in HER2+ early breast cancer; the pCR rate for dual
+anti-HER2 combination was 51.3%, higher than that of paclitaxel
+combined
+with
+single-antibody
+treatment
+with
+trastuzumab
+(29.5%) or lapatinib (24.7%). However, most combination trastuzu-
+mab and lapatinib studies have excluded IBC patients or did not
+report their inclusion.
+d Trastuzumab emtansine
+Trastuzumab emtansine (T-DM1) is an antibody-drug conjugate
+that has efﬁcacy against breast cancer and acceptable toxicity. The
+conjugate comprises trastuzumab linked with the cytotoxic anti-
+microtubule agent DM1 (emtansine) and acts by directly binding
+on HER2 receptors of tumor cells. T-DM1 gains intracellular entry
+via endocytosis, and DM1 is released by lysosomal degradation
+[72]. Notably, T-DM1 is cytotoxic by itself, without coupling with
+chemotherapy. The KRISTINE trial [73], a randomized phase 3 trial,
+evaluated neoadjuvant treatment with a T-DM1 plus pertuzumab
+regimen or a TCHP regimen in 444 patients with HER2+ breast can-
+cer, including IBC. Unfortunately, the pCR rate was signiﬁcantly
+higher for the TCHP regimen than for T-DM1 plus pertuzumab
+(56% vs. 44%, respectively; p = 0.016). However, the TCHP regimen
+had a higher rate of serious adverse events (31% vs. 29%), including
+febrile neutropenia, diarrhea, and vomiting. Therefore, T-DM1 plus
+pertuzumab in the neoadjuvant setting is not superior to trastuzu-
+mab plus pertuzumab–containing regimen in terms of response;
+however, T-DM1 is more favorable in terms of toxicity. Therefore,
+the T-DM1 plus pertuzumab regimen is another option for patients
+in whom the TCHP regimen is not well tolerated.
+Recently, the KATERINE trial [74] evaluated adjuvant therapy in
+patients with HER2+ breast cancer who did not experience a pCR
+after treatment with a taxane-based regimen plus trastuzumab. A
+total of 1,486 patients, including 22 IBC patients, were randomized
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+4
+to treatment with either adjuvant T-DM1 or trastuzumab for 14
+cycles. The primary endpoint, invasive DFS, deﬁned as freedom
+from invasive breast cancer recurrence or death, was 88.3% in the
+T-DM1 group and 77% in the trastuzumab group with a hazard
+ratio of 0.50 (95%CI 0.39–0.64, p < 0.001). However, adjuvant
+anti-HER2 therapy should be considered, as shown by a previously
+published study. An APHINITY trial [75] showed greater beneﬁt
+from adjuvant pertuzumab plus trastuzumab than adjuvant trastu-
+zumab alone in lymph node-positive disease or high-risk node-
+negative disease: 3-year invasive DFS rates were 94.1% and
+93.2%, respectively, with a hazard ratio of 0.81 (95% CI 0.66–1.00,
+P = 0.045). In summary, adjuvant pertuzumab plus trastuzumab
+are recommended in HER2+ IBC who achieve a pCR, and adjuvant
+T-DM1 is recommended in IBC cases with a non-pCR.
+e Neratinib
+Neratinib is a tyrosine kinase inhibitor that irreversibly binds to
+EGFR, HER2, and HER4. The ExteNET study showed beneﬁt from
+adjuvant neratinib for 1 year after completion of adjuvant trastu-
+zumab, with an invasive DFS rate of 90.2% compared with 87.7%
+from placebo (hazard ratio = 0.73, 95% CI 0.57–0.92, p = 0.008)
+[76]. After amendments, the eligibility of the ExteNET study was
+restricted to patients with high-risk recurrent disease (e.g., node-
+positive disease). Therefore, the role of adjuvant neratinib should
+be considered with high-risk recurrent disease like IBC. However,
+the toxicity risk of neratinib should also be considered, particularly
+diarrhea, which is the most common adverse event (grade 3, 40%;
+grade 4, 0.1%).
+f Bevacizumab
+Bevacizumab is a monoclonal antibody against circulating vas-
+cular endothelial growth factor (VEGF), a known angiogenesis acti-
+vator
+in
+tumors.
+In
+preclinical
+data,
+the
+combination
+of
+bevacizumab with taxane-based chemotherapy inhibited tumor
+growth and metastasis of IBC cells (SUM149) [77]. In clinical data,
+three studies evaluated the addition of bevacizumab to neoadju-
+vant therapy, speciﬁcally in IBC patients.
+The BEVERLY-1 and BEVERLY-2 studies, with similar study
+designs, evaluated the pCR rate in non-metastatic IBC patients with
+both
+HER2-
+(BEVERLY-1)
+and
+HER2+
+(BEVERLY-2)
+disease.
+BEVERLY-1 [78], a single-arm phase 2 study, treated HER2- IBC
+patients (n = 100) with an FEC regimen plus bevacizumab for four
+cycles followed by docetaxel plus bevacizumab for four cycles.
+After surgery, patients received adjuvant radiation, adjuvant beva-
+cizumab for ten cycles, and adjuvant hormonal therapy as clinically
+indicated. Results were disappointing, with a low pCR rate of 19%,
+similar to the pCR rates in the studies of chemotherapy without the
+targeted therapy mentioned above. Around one-third of all
+patients had serious adverse events, including febrile neutropenia,
+mucositis, and peritonitis. Rates of toxicity related to bevacizumab
+were 20–40% (e.g., hypertension, proteinuria, and wound-healing
+complications). The 3-year DFS was 57%, and the 3-year OS was
+75%.
+The BEVERLY-2 study investigated neoadjuvant therapy plus
+bevacizumab in non-metastatic HER2+ IBC (n = 52). All patients
+received neoadjuvant therapy with FEC plus bevacizumab for four
+cycles, followed by docetaxel plus trastuzumab combined with
+bevacizumab for four cycles. As in BEVERLY-1, after surgery, all
+patients received adjuvant radiation, adjuvant trastuzumab plus
+bevacizumab continuing up to about 1 year, and adjuvant hor-
+monal therapy as clinically indicated. In contrast to BEVERLY-1,
+BEVERLY-2 showed a promising pCR rate of 63%. The 3-year DFS
+rate was 68%, and the 3-year OS was 90% [79]. Again, around
+one-third of patients had serious adverse events, including febrile
+neutropenia, anal abscess, and LVEF decrease. BEVERLY-2 also
+reported that among patients with no detection of circulating
+tumor cells at baseline (<1 cell/7.5 ml) and achieved a pCR were
+a good prognosis with a high 3-year DFS rate of 98% [79].
+The third study, by Palazzo et al., assessed the pCR rate in 34 IBC
+patients treated with paclitaxel, carboplatin, and oral cyclophos-
+phamide combined with bevacizumab for 24 weeks before surgery.
+If tumors were HER2+ or HR+, trastuzumab and endocrine therapy
+were added as indicated. The pCR rate was 29% overall, 57% in
+HER2+ cases, 20% in triple-negative cases, and 0% in the HR+ sub-
+type. The treatment was well tolerated; only one patient developed
+a serious adverse event of grade 4 neutropenia [80].
+Concerning
+predictive
+biomarkers,
+a
+pooled
+analysis
+of
+BEVERLY-1 and BEVERLY-2 [81] again reported that patients with
+no detection of circulating tumor cells at baseline (<1 cell/7.5 ml)
+and a pCR showed good prognosis, with a high 3-year OS rate of
+94%. The AVEREL study [82], a randomized phase 3 trial, aimed
+to evaluate ﬁrst-line therapy with docetaxel and trastuzumab with
+or without bevacizumab in HER2+ metastatic breast cancer. The
+study reported that VEGF-A showed potential as a biomarker for
+bevacizumab efﬁcacy; a high plasma concentration of VEGF-A
+was associated with greater beneﬁt from therapy than a low con-
+centration. This result was consistent with the BEATRICE study
+[83], which also found that high plasma VEGF-A concentration
+was associated with greater beneﬁt from adding bevacizumab to
+neoadjuvant therapy. However, the absolute differences in the
+beneﬁts associated with VEGF-A were not statistically signiﬁcant.
+Bevacizumab was approved by the U.S. Food and Drug Administra-
+tion for metastatic breast cancer; however, the approval was with-
+drawn after safety and efﬁcacy concerns arose. At present, the role
+of bevacizumab is used in certain circumstances with paclitaxel for
+metastatic breast cancer [26].
+g Panitumumab
+Around one-third of IBC cases typically express EGFR, and
+higher EGFR expression correlates with worse prognosis [84,85].
+The humanized anti-EGFR antibody, panitumumab, besides being
+approved for the treatment of colorectal cancer, also has clinical
+efﬁcacy in breast cancer. In a single-arm phase 2 study, panitu-
+mumab was combined with preoperative carboplatin and nab-
+paclitaxel for four cycles, followed by an FEC regimen for four
+cycles in 47 patients with newly diagnosed HER2- IBC regardless
+EGFR expression status, leading to a pCR rate of 28% [86]. The
+triple-negative IBC subtype had the highest pCR at 42%. Among
+the expressed proteins of baseline tissues, only pEGFR expression
+was associated with pCR (p = 0.05), but EGFR was not (p = 0.14).
+Hematologic toxicity was moderate, 30% of patients had grade 4
+neutropenia, and 15% had grade 3 or 4 thrombocytopenia. The
+most frequent non-hematologic toxicity related to panitumumab
+affected the skin; six patients (15%) had grade 3 skin rash. To our
+knowledge, this targeted therapy study is the ﬁrst to show a high
+pCR for the poor-prognosis disease triple-negative IBC [86]. Now,
+an ongoing clinical trial is evaluating combination NAC plus pani-
+tumumab for IBC (NCT01036087) in Table 1.
+h Pazopanib
+Pazopanib is a small-molecule multi-tyrosine kinase inhibitor
+of VEGFR1-3, FGFR1 and -3, PDGFRa and -b, and c-Kit. A random-
+ized phase 2 study, VEG20007 [87], evaluated ﬁrst-line lapatinib
+plus pazopanib therapy or lapatinib monotherapy in patients with
+HER2+ locally advanced and metastatic breast cancer (n = 190),
+including IBC. HER2+ status was deﬁned as 3+ by immunohisto-
+chemistry or HER2 gene ampliﬁcation by ﬂuorescence in situ
+hybridization. The primary endpoint was the rate of progressive
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+5
+disease after 12 weeks. Progression rates did not differ between the
+combination therapy and lapatinib monotherapy (36.2% vs. 38.9%,
+p = 0.37). However, the most common grade 3–4 adverse events
+were twice as frequent in the combination arm compared with
+the monotherapy, e.g., diarrhea (9% vs. 5%), hypertension (5% vs.
+0%), and fatigue (4% vs. 0%) [87]. Another study [88] speciﬁcally
+for metastatic HER2+ IBC patients included 76 IBC patients treated
+with lapatinib (1500 mg) plus pazopanib (800 mg); this cohort was
+prematurely closed because of a high incidence of grade 3–4 toxi-
+city. In a second cohort, 88 IBC patients were randomized to treat-
+ment with pazopanib (400 mg) plus lapatinib (1000 mg) or
+monotherapy with either lapatinib (1500 mg) or pazopanib
+(800 mg). The overall response rate was numerically highest in
+the combination arm, at 58%; response rates for monotherapy lap-
+atinib and pazopanib were 47% and 31%, respectively. Median
+progression-free survival was the same in the combination and
+lapatinib monotherapy arms (16 weeks) and was 11.4 weeks for
+pazopanib monotherapy. Again, combination therapy had a higher
+rate of serious adverse events than did lapatinib monotherapy (24%
+vs. 11%, respectively). There are no further clinical trials of pazopa-
+nib for breast cancer to date.
+i Other targeted therapies
+Afatinib is an irreversible ErbB family blocker that has shown
+preclinical activity in trastuzumab-resistant cell lines [89]. A phase
+2 clinical trial evaluated afatinib with or without vinorelbine in
+metastatic HER2+ IBC. However, the trial was stopped early after
+another study showed that afatinib was associated with shorter
+survival, 26 IBC patients who remained showed a clinical beneﬁt
+rate of 35% from afatinib monotherapy [90]. An oral multi-
+tyrosine kinase inhibitor, sunitinib, was evaluated in a phase 2 trial
+in combination with NAC in patients with HER2- LABC or IBC
+(n = 70). The neoadjuvant treatment was sunitinib combined with
+weekly paclitaxel followed by AC regimens with G-CSF. Disap-
+pointingly, overall results showed a low pCR rate of 24% [91].
+Over two decades, there have been many changes in systemic
+treatment leading to improved survival outcomes for breast can-
+cer, speciﬁcally IBC (Fig. 1). We had chemotherapy as a tool against
+breast cancer in the past, and today we have a combination of tar-
+geted therapy and chemotherapy, which has a higher pCR rate. Not
+all strategies or agents are effective in IBC (e.g., the HDCT strategy
+has a higher pCR rate than conventional chemotherapy but has too
+great a toxicity risk). Now, we know that the identiﬁcation of
+breast cancer subtypes dictates the prognosis and speciﬁc treat-
+ment. Therefore, practical treatment guidelines in the era of per-
+sonalized medicine are classiﬁed by subtypes.
+The current standard of care for newly diagnosed IBC
+Based on the above information and international consensus on
+IBC [39], based on collaboration with experts from high-volume
+centers, there is broad agreement that upfront systemic treatment
+should be administered before surgery. This systemic treatment
+comprises sequential treatment with anthracycline-based and
+taxane-based
+chemotherapy,
+with
+or
+without
+carboplatin.
+Although different centers with IBC clinics may administer slightly
+different systemic regimens, the backbone chemotherapy regimen
+is the same. We present the current neoadjuvant and adjuvant
+therapy for IBC from our center in Table 2. These recommendations
+differ according to the IBC subtype.
+a Triple-negative
+Anthracycline- and taxane-based chemotherapy remain the
+backbone of neoadjuvant therapy for triple-negative IBC. A dose-
+dense regimen may be integrated into some situations, but both
+risks and beneﬁts need to be considered. The addition of carbo-
+Table 1
+Ongoing clinical trials for IBC.
+Identiﬁer
+(Status)
+Population
+Phase
+Regimen
+Endpoint
+NCT03515798
+(Recruiting)
+HER2-, IBC
+Randomized phase
+2
+Arm 1: (FEC + weekly paclitaxel) + pembrolizumab
+Arm 2: FEC + weekly paclitaxel
+pCR rate
+NCT02971748
+(Recruiting)
+HR+, IBC
+Single-arm phase 2
+Non-pCR case treated with adjuvant
+pembrolizumab + hormone therapy
+2-year DFS
+NCT02876302
+(Recruiting)
+Triple-negative IBC
+Phase 2
+Weekly paclitaxel + ruxolitinib then AC regimen
+Change of JAK
+expression
+NCT01036087
+(Active, not
+recruiting)
+Triple-negative IBC
+Randomized phase
+2
+Arm 1: panitumumab + carboplatin + nab-paclitaxel then FEC
+Arm :2 carboplatin + nab-paclitaxel then FEC
+pCR rate
+NCT02623972
+(Recruiting)
+HER2-, IBC
+Phase 2
+AC then eribulin
+pCR rate
+NCT03598257
+(Recruiting)
+Non-metastatic IBC
+Phase 2
+Concurrent radiation + olaparib vs radiation alone
+Invasive DFS
+NCT03101748
+(Recruiting)
+LABC or metastatic IBC
+Phase 1b/2
+Neratinib + paclitaxel + pertuzumab + trastuzumab
+pCR rate
+NCT03202316
+(Recruiting)
+Recurrent or metastatic IBC
+Single-arm phase 2
+Atezolizumab + cobimetinib + eribulin
+Response rate
+NCT02411656
+(Recruiting)
+Stage IV, IBC or triple-negative
+Single-arm phase 2
+Maintenance pembrolizumab in non-PD cases after
+chemotherapy
+Disease control rate
+NCT03101748
+(Recruiting)
+HER2+ or -, IBC
+Single-arm phase 2
+Cohort 1: paclitaxel + pertuzumab + trastuzumab + neratinib
+then AC regimen
+Cohort 2: paclitaxel + neratinib then AC regimen
+pCR rate
+NCT03742986
+(Recruiting)
+Newly diagnosed IBC
+Non-randomized
+phase 2
+Cohort HER2-: weekly paclitaxel + nivolumab then AC
+Cohort HER2+; same regimen plus pertuzumab + trastuzumab
+pCR rate
+NCT02658812
+(Active, not
+recruiting)
+Local recurrence IBC or
+inoperable non-IBC
+Single- arm phase 2
+Talimogene laherparepvec
+Response rate
+Abbreviations: IBC, inﬂammatory breast cancer; HER2, human epidermal growth factor receptor 2; pCR, pathologic complete response; FEC, 5-ﬂuorouracil, epirubicin and
+cyclophosphamide; AC, doxorubicin and cyclophosphamide; LABC, locally advanced breast cancer; DFS, disease-free survival; PD, progressive disease (accessed clinical-
+trial.gov on April 23, 2020).
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+6
+platin to a neoadjuvant regimen increases the pCR rate in TNBC
+[92,93], but these data do not include IBC patients. Hence, there
+are no data to support carboplatin for IBC [39]. A randomized phase
+3 study, CREATE-X [94], showed that patients with HER2- non-pCR
+breast cancer treated with adjuvant capecitabine had longer OS
+than those given an adjuvant placebo (hazard ratio = 0.59, 95% CI
+0.39–0.90), suggesting that adjuvant capecitabine for six to eight
+cycles can be considered in cases without a pCR. Interestingly, a
+more pronounced OS beneﬁt was observed in triple-negative dis-
+ease (hazard ratio = 0.52, 95% CI 0.30–0.90).
+b HR-positive
+The response rate to NAC is low in HR+ breast cancer compared
+with TNBC. Nevertheless, NAC, similar to that used in TNBC, is rec-
+ommended for HR+ breast cancer. As for adjuvant therapy, a key
+consideration is that IBC carries a high risk for recurrence. Further-
+more, ER+ breast cancer has a risk of recurrence after 5 years.
+Therefore, extended adjuvant endocrine therapy can help reduce
+recurrence risk. The use of either tamoxifen or aromatase inhibi-
+tors for extended adjuvant therapy for up to 10 years has been
+associated with improved survival outcomes in breast cancer
+[95–98]. Among premenopausal breast cancer patients, based on
+the TEXT and SOFT trials, the addition of ovarian suppression to
+adjuvant endocrine therapy showed higher rates of DFS and OS
+in high-risk patients than endocrine therapy alone [99].
+Despite the potential survival beneﬁt of extended adjuvant
+endocrine therapy and ovarian suppression, these approaches also
+may incur their own adverse events and long-term toxicity. For
+example, the addition of ovarian suppression increased the rate
+of osteoporosis, diabetes, cardiovascular disease, and depression
+[99]. Some of these adverse effects may be treatable; for example,
+the use of bisphosphonate can increase bone density and may also
+improve survival in breast cancer patients [100]. Now, an ongoing
+trial of adjuvant endocrine therapy plus immune checkpoint inhi-
+bitors in patients with non-pCR, HR+/HER2- breast cancer after
+neoadjuvant therapy is enrolling (NCT02971748).
+c HER2-positive
+For HER2+ IBC, based on the NeoSphere and TRYPHAENA trials,
+the recommended neoadjuvant therapy is a regimen containing
+Fig. 1. Timeline of systemic treatment for inﬂammatory breast cancer.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+7
+pertuzumab plus trastuzumab (dual anti-HER2 antibodies) in com-
+bination with an anthracycline-containing regimen (speciﬁcally,
+THP for four cycles followed by an anthracycline-containing regi-
+men for four cycles). No data are demonstrating the superiority
+of dual anti-HER2 antibodies with a non-anthracycline regimen
+(TCHP regimen for six cycles) over the dual anti-HER2 antibodies
+with the anthracycline-containing regimen, because the primary
+endpoint of TRYPHAENA trial [62] was safety and tolerability,
+which cannot be used to determine conclusions about the efﬁcacy
+of each regimen. Therefore, we still have recommended the dual
+anti-HER2 antibodies in combination with an anthracycline-
+containing regimen for HER2+ IBC.
+Even for patients who experience a pCR after neoadjuvant ther-
+apy, those with HER2+ IBC are still at a high risk of recurrence [15].
+Adjuvant pertuzumab plus trastuzumab for 1 year are recom-
+mended in HER2+ breast cancer based on the APHINITY trial [75],
+which showed beneﬁt from adjuvant dual anti-HER2 antibodies
+in high-risk patients. In HER2+ IBC cases without a pCR, adjuvant
+T-DM1 is recommended (KATERINE trial [74]). After the comple-
+tion of adjuvant anti-HER2 therapy, neratinib is recommended in
+the high-risk situation, especially non- pCR patients, and should
+discuss to risk-beneﬁt assessment for pCR patients [76]. However,
+grade 3–4 diarrhea was commonly found (40%) with neratinib
+compared with placebo (2%), leading to discontinuation of nera-
+tinib in up to 28% of patients treated with neratinib [76]; anti-
+diarrheal prophylaxis should be offered.
+d De novo stage IV IBC
+For patients with de novo stage IV IBC, we recommend similar
+systemic treatment to that of non-metastatic IBC, intending to
+achieve optimal response. Patients should then be evaluated for
+surgery and radiation therapy by a multidisciplinary team. In cases
+that show a response or stable disease after neoadjuvant therapy,
+local therapy at the primary breast tumor (e.g., modiﬁed radical
+mastectomy followed by radiation) should be discussed working
+with a multidisciplinary team. Although the survival impact of
+local therapy of the primary tumor in the metastatic setting is con-
+troversial, loco-regional progression in IBC can lead to serious mor-
+bidity [39].
+Immunotherapy and future directions
+Role of immunotherapy in clinical data
+Recently, the U.S. Food and Drug Administration accelerated
+approval of the anti–PD-L1 immune checkpoint inhibitor ate-
+zolizumab in combination with nab-paclitaxel in patients with
+unresectable or metastatic triple-negative breast cancer (TNBC)
+whose tumor expresses PD-L1 (1%), based on phase 3 randomized
+trial
+(IMpassion130)
+[101].
+In
+the
+neoadjuvant
+setting,
+immunotherapy for breast cancer has been investigated in two
+randomized
+trials,
+KEYNOTE-522
+[102]
+and
+I-SPY2
+[103].
+KEYNOTE-522
+studied
+the
+combination
+of
+anti–PD-1
+(pem-
+brolizumab) with preoperative chemotherapy, carboplatin plus
+paclitaxel followed by the AC regimen, in patients with TNBC (in-
+cluding IBC patients), followed by adjuvant pembrolizumab, met
+one of the dual-primary endpoints (pCR rate). The combination
+of pembrolizumab and chemotherapy showed signiﬁcant improve-
+ment in pCR rate compared with placebo plus chemotherapy
+(64.8% vs. 51.2%, P < 0.001). The improved beneﬁt was consistent
+with respect to the pCR rate across subgroups, including both
+PD-L1 expressions positive or negative. Besides, an ongoing phase
+2 trial, the adaptively randomized I-SPY2 trial [103], is evaluating
+the effect of pembrolizumab on pCR rate in high-risk stage II-III
+breast cancer. This study is using multiple investigational arms in
+parallel and using the standard neoadjuvant arm as the common
+control arm; weekly paclitaxel for 12 cycles followed by AC regi-
+men for 4 cycles. They reported the pCR rate of HER2- patient trea-
+ted with weekly paclitaxel plus every 3 weeks of pembrolizumab
+for 12 weeks, then AC regime for 4 cycles was 44% compared with
+pCR rate of control arm 17%. For the triple-negative subtype and
+the HR+/HER2- subtype, pCR rates were 60% and 30%, respectively,
+in the pembrolizumab arm but 22% and 13%, respectively in the
+control arm.
+Future directions
+Previously mentioned studies suggest that the combination of
+an immune checkpoint inhibitor and chemotherapy increases
+response rate and efﬁcacy in breast cancer; however, the number
+of IBC patients in those trials was limited. A study from our insti-
+tute showed that PD-L1 was expressed in 36.8% of IBC tumor cells
+on immunohistochemical staining (monoclonal rabbit anti–PD-L1
+antibody, clone 28-8). PD-L1 expression in the tumor was not asso-
+ciated with clinicopathologic characters, including histologic type,
+tumor grade, or ER, progesterone receptor, or HER2 status; how-
+ever, PD-L1–positive tumors (>1% of tumor cells) were associated
+with worse OS [104]. The incidence of PD-L1 expression in this
+study was similar to that of a study by Bertucci et al., which
+reported PD-L1 overexpression in 38% of IBC tumor cells and 28%
+in non-IBC tumors, according to mRNA expression using DNA
+microarray [105]. On the other hand, PD-L1 mRNA overexpression
+was associated with ER- status, basal and HER2+ subtypes, and
+higher pCR rate after NAC, but not OS [105]. PD-L1 expression is
+found not only in tumor cells but also in tumor-inﬁltrating lym-
+phocytes (TILs), which are considered to be the main effector of
+immunotherapy. Arias-Pulido et al. reported 221 IBC samples had
+PD-L1 positivity of 66% in the TILs and more than 8% in the tumor
+cells and also showed that PD-L1 expression (5%) in the TILs was
+associated with the better DFS [106]. Berckelaer et al. reported 105
+Table 2
+Current regimen for newly diagnosed inﬂammatory breast cancer from Morgan
+Welch Inﬂammatory Breast Cancer Clinic, The University of Texas MD Anderson
+Cancer Center.
+Subtype
+Regimen
+Comment
+Neoadjuvant
+therapy
+Triple-
+negative
+Weekly paclitaxel (or DD
+paclitaxel) followed by
+standard AC regimen (or DD
+AC regimen)
+Consider
+carboplatin to
+paclitaxel if
+patient is eligible
+ER-
+positive
+Weekly paclitaxel (or DD
+paclitaxel) followed by
+standard AC regimen (or DD
+AC regimen)
+HER2-
+positive
+THP  4 cycles followed by
+AC  4 cycles or AC  4
+followed by THP  4 cycles
+(DD or every 3 weeks)
+TCHP  6 cycles as
+a second option
+Adjuvant
+therapy
+Triple-
+negative
+Non-pCR: capecitabine
+ER-
+positive
+(1st choice) Aromatase
+inhibitor +/- ovarian
+function suppression for
+10 years
+(2nd choice) Tamoxifen for
+10 years
+Adjuvant
+bisphosphonate
+HER2-
+positive
+pCR:
+trastuzumab + pertuzumab
+Non-pCR: T-DM1
+Offer neratinib
+Abbreviations: ER, estrogen receptor; HER2, human epidermal growth factor
+receptor 2; pCR, pathologic complete response; DD, dose-dense; AC, doxorubicin
+and cyclophosphamide; THP, docetaxel plus trastuzumab and pertuzumab; TCHP,
+docetaxel, and carboplatin plus pertuzumab and trastuzumab.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+8
+IBC samples had PD-L1 positivity (1%) in the TILs, more than in
+the TILs of non-IBC samples, 42.9% vs. 23.7%, respectively [107].
+Taken together, these ﬁndings indicate that PD-L1 is an immune
+checkpoint molecule that is found in both the tumor cells and the
+TILs of IBC more frequently than in non-IBC, and thus is a potential
+predictive biomarker for immunotherapy. Beyond the combination
+of chemotherapy and an immune checkpoint inhibitor, as used in
+the KEYNOTE-522 and I-SPY2 trials, our institute also demon-
+strates IBC preclinical data supporting a combination of targeted
+therapy and an immune checkpoint inhibitor [108]. Further, an
+anti-EGFR agent combined with an anti–PD-L1 antibody inhibited
+the growth of IBC tumors more than either single-agent treatment
+(unpublished data). Even if immunotherapy studies conducted
+speciﬁcally in IBC patients have not been established, these ﬁnd-
+ings provide a rationale for future studies of the use of immune
+checkpoint inhibitors as a part of IBC treatment. To ﬁll this gap
+in knowledge, ongoing immunotherapy studies are enrolling
+patients with IBC in many trials, as shown in Table 1. Another issue
+is a slow accrual problem of IBC clinical trials; multicenter clinical
+trials are an important key to resolve this problem. Hopefully, clin-
+icians and researchers will be motivated to cooperate.
+Conclusion
+Frequent distant metastases and poor prognosis indicate that
+IBC is a unique entity rather than a subtype of LABC. IBC has high
+potential for fatality, urgently necessitating the development of
+novel systemic treatments. This review shows that anthracycline
+and taxane are the backbone of chemotherapy and remain a cur-
+rent treatment. We do not have scientiﬁc evidence to deescalate
+the treatment as in non-IBC settings. We have learned from the
+past that high-dose chemotherapy with AHSCT is too toxic a strat-
+egy, with no apparent beneﬁt. In the targeted therapy era, only
+anti-HER2 therapies have been incorporated into the current stan-
+dard IBC treatment. Recently, a high pCR rate has been produced by
+immune checkpoint inhibitors for non-IBC; the preclinical ﬁndings
+suggest a possible role for immunotherapy in IBC in the future. We
+hope this review provides a foundation of knowledge for the devel-
+opment of new treatment approaches, especially for IBC-speciﬁc
+clinical trials. Utilizing a multicenter approach in a global level is
+a key to improved success of IBC clinical trials.
+Compliance with Ethics Requirements
+This article does not contain any studies with human or animal
+subjects.
+Declaration of Competing Interest
+Naoto T. Ueno has a research agreement with Amgen, Celgene
+and PUMA Oncology. The other authors declare that they have no
+known competing ﬁnancial interests or personal relationships that
+could have appeared to inﬂuence the work reported in this paper.
+Acknowledgment
+We would like to thank Sarah Bronson of Scientiﬁc Publications,
+Research Medical Library, MD Anderson Cancer Center for her help
+in editing this article.
+Funding
+This review article is supported by the Morgan Welch Inﬂam-
+matory Breast Cancer Research Program, a State of Texas Rare
+and Aggressive Breast Cancer Research Program Grant, National
+Institutes of Health and The MD Anderson Cancer Center Support
+Grant from the US National Cancer Institute (CA016672).
+References
+[1] Hance KW, Anderson WF, Devesa SS, Young HA, Levine PH. Trends in
+inﬂammatory breast carcinoma incidence and survival: the surveillance,
+epidemiology, and end results program at the National Cancer Institute. J Natl
+Cancer Inst 2005;97(13):966–75.
+[2] Goldner B, Behrendt CE, Schoellhammer HF, Lee B, Chen SL. Incidence of
+inﬂammatory breast cancer in women, 1992–2009. United States Ann Surg
+Oncol 2014;21(4):1267–70.
+[3] Schinkel JK, Zahm SH, Jatoi I, McGlynn KA, Gallagher C, Schairer C, et al.
+Racial/ethnic differences in breast cancer survival by inﬂammatory status and
+hormonal receptor status: an analysis of the Surveillance, Epidemiology, and
+End Results data. Cancer Causes Control 2014;25(8):959–68.
+[4] Zhang H, Ma G, Du S, Sun J, Zhang Q, Yuan B, et al. Nomogram for predicting
+cancer
+speciﬁc
+survival
+in
+inﬂammatory
+breast
+carcinoma:
+a
+SEER
+population-based study. PeerJ 2019;7:e7659.
+[5] Dawood S, Ueno NT, Valero V, Woodward WA, Buchholz TA, Hortobagyi GN,
+et al. Differences in survival among women with stage III inﬂammatory and
+noninﬂammatory locally advanced breast cancer appear early: a large
+population-based study. Cancer 2011;117(9):1819–26.
+[6] van Uden DJP, van Maaren MC, Strobbe LJA, Bult P, van der Hoeven JJ, Siesling
+S, et al. Metastatic behavior and overall survival according to breast cancer
+subtypes in stage IV inﬂammatory breast cancer. Breast Cancer Res 2019;21
+(1).
+[7] Fouad TM, Kogawa T, Liu DD, Shen Y, Masuda H, El-Zein R, et al. Overall
+survival
+differences
+between
+patients
+with
+inﬂammatory
+and
+noninﬂammatory
+breast
+cancer
+presenting
+with
+distant
+metastasis
+at
+diagnosis. Breast Cancer Res Treat 2015;152(2):407–16.
+[8] Schlichting
+JA,
+Soliman
+AS,
+Schairer
+C,
+Schottenfeld
+D,
+Merajver
+SD.
+Inﬂammatory
+and
+non-inﬂammatory
+breast
+cancer
+survival
+by
+socioeconomic position in the Surveillance, Epidemiology, and End Results
+database, 1990–2008. Breast Cancer Res Treat 2012;134(3):1257–68.
+[9] van Uden DJ, Bretveld R, Siesling S, de Wilt JH, Blanken-Peeters CF.
+Inﬂammatory breast cancer in the Netherlands; improved survival over the
+last decades. Breast Cancer Res Treat 2017;162(2):365–74.
+[10] Fayanju OM, Ren Y, Greenup RA, Plichta JK, Rosenberger LH, Force J, et al.
+Extent of axillary surgery in inﬂammatory breast cancer: a survival analysis
+of 3500 patients. Breast Cancer Res Treat 2020;180(1):207–17.
+[11] Giuliano AE, Edge SB, Hortobagyi GN. Eighth Edition of the AJCC Cancer
+Staging Manual: Breast Cancer. Ann Surg Oncol 2018;25(7):1783–5.
+[12] Bonnier P, Charpin C, Lejeune C, Romain S, Tubiana N, Beedassy B, et al.
+Inﬂammatory carcinomas of the breast: a clinical, pathological, or a clinical
+and pathological deﬁnition?. Int J Cancer 1995;62(4):382–5.
+[13] Dawood S, Merajver SD, Viens P, Vermeulen PB, Swain SM, Buchholz TA, et al.
+International
+expert
+panel
+on
+inﬂammatory
+breast
+cancer:
+consensus
+statement for standardized diagnosis and treatment. Ann Oncol 2011;22
+(3):515–23.
+[14] Wu SG, Zhang WW, Wang J, Dong Y, Sun JY, Chen YX, et al. Inﬂammatory
+breast cancer outcomes by breast cancer subtype: A population-based study.
+Future Oncol 2019;15(5):507–16.
+[15] Masuda H, Brewer TM, Liu DD, Iwamoto T, Shen Y, Hsu L, et al. Long-term
+treatment efﬁcacy in primary inﬂammatory breast cancer by hormonal
+receptor- and HER2-deﬁned subtypes. Ann Oncol 2014;25(2):384–91.
+[16] Matro JM, Li T, Cristofanilli M, Hughes ME, Ottesen RA, Weeks JC, et al.
+Inﬂammatory breast cancer management in the national comprehensive
+cancer network: the disease, recurrence pattern, and outcome. Clin Breast
+Cancer 2015;15(1):1–7.
+[17] Biswas T, Eﬁrd JT, Walker PR, James SE, Prasad S, Zagar T. Inﬂammatory TNBC
+breast cancer: Demography and clinical outcome in a large cohort of TNBC
+patients. Journal of Clinical Oncology Conference 2014;32(15 SUPPL. 1).
+[18] Uemura MI, French JT, Hess KR, Liu D, Raghav K, Hortobagyi GN, et al.
+Development of CNS metastases and survival in patients with inﬂammatory
+breast cancer. Cancer 2018;124(11):2299–305.
+[19] Wang Z, Chen M, Pan J, Wang X, Chen XS, Shen KW. Pattern of distant
+metastases in inﬂammatory breast cancer - A large-cohort retrospective
+study. J Cancer 2020;11(2):292–300.
+[20] Cortazar P, Zhang L, Untch M, Mehta K, Costantino JP, Wolmark N, et al.
+Pathological complete response and long-term clinical beneﬁt in breast
+cancer: the CTNeoBC pooled analysis. Lancet (London, England) 2014;384
+(9938):164–72.
+[21] Yee D, DeMichele A, Isaacs C, Symmans F, Yau C, Albain K, et al. Abstract GS3-
+08: Pathological complete response predicts event-free and distant disease-
+free survival in the I-SPY2 TRIAL. Cancer Res 2018;78(4 Supplement). GS3-08-
+GS3.
+[22] Ueno NT, Buzdar AU, Singletary SE, Ames FC, McNeese MD, Holmes FA, et al.
+Combined-modality treatment of inﬂammatory breast carcinoma: twenty
+years of experience at M. D. Anderson Cancer Center. Cancer Chemother
+Pharmacol 1997;40(4):321–9.
+[23] van Uden DJP, van Maaren MC, Bult P, Strobbe LJA, van der Hoeven JJM,
+Blanken-Peeters C, et al. Pathologic complete response and overall survival in
+breast cancer subtypes in stage III inﬂammatory breast cancer. Breast Cancer
+Res Treat 2019;176(1):217–26.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+9
+[24] Koh EH, Buzdar AU, Ames FC, Singletary SE, McNeese MD, Frye D, et al.
+Inﬂammatory carcinoma of the breast: results of a combined-modality
+approach–M.D. Anderson Cancer Center experience. Cancer Chemother
+Pharmacol 1990;27(2):94–100.
+[25] Rueth NM, Lin HY, Bedrosian I, Shaitelman SF, Ueno NT, Shen Y, et al.
+Underuse
+of
+trimodality
+treatment
+affects
+survival
+for
+patients
+with
+inﬂammatory breast cancer: an analysis of treatment and survival trends
+from the National Cancer Database. J Clin Oncol 2014;32(19):2018–24.
+[26] National Comprehensive Cancer Network. Breast Cancer (Version3.2020);
+2020
+[Available
+from:
+https://www.nccn.org/professionals/physician_gls/
+pdf/breast.pdf.
+[27] Cardoso F, Kyriakides S, Ohno S, Penault-Llorca F, Poortmans P, Rubio IT, et al.
+Early
+breast
+cancer:
+ESMO
+Clinical
+Practice
+Guidelines
+for
+diagnosis,
+treatment and follow-up. Ann Oncol 2019;30(10):1674.
+[28] Harris EE, Schultz D, Bertsch H, Fox K, Glick J, Solin LJ. Ten-year outcome after
+combined modality therapy for inﬂammatory breast cancer. Int J Radiat Oncol
+Biol Phys 2003;55(5):1200–8.
+[29] Baldini E, Gardin G, Evagelista G, Prochilo T, Collecchi P, Lionetto R. Long-term
+results of combined-modality therapy for inﬂammatory breast carcinoma.
+Clin Breast Cancer 2004;5(5):358–63.
+[30] Low JA, Berman AW, Steinberg SM, Danforth DN, Lippman ME, Swain SM.
+Long-term follow-up for locally advanced and inﬂammatory breast cancer
+patients
+treated
+with
+multimodality
+therapy.
+J
+Clin
+Oncol
+2004;22
+(20):4067–74.
+[31] Cristofanilli
+M,
+Gonzalez-Angulo
+AM,
+Buzdar
+AU,
+Kau
+SW,
+Frye
+DK,
+Hortobagyi GN. Paclitaxel improves the prognosis in estrogen receptor
+negative inﬂammatory breast cancer: the M. D. Anderson Cancer Center
+experience. Clin Breast Cancer 2004;4(6):415–9.
+[32] Cristofanilli M, Buzdar AU, Sneige N, Smith T, Wasaff B, Ibrahim N, et al.
+Paclitaxel in the multimodality treatment for inﬂammatory breast carcinoma.
+Cancer 2001;92(7):1775–82.
+[33] Bonadonna G, Zambetti M, Valagussa P. Sequential or alternating doxorubicin
+and CMF regimens in breast cancer with more than three positive nodes. Ten-
+year results. JAMA 1995;273(7):542–7.
+[34] Ditsch N, Vodermaier A, Hinke A, Burghardt S, Lenhard M, Lohrs B, et al. Dose-
+dense intensiﬁed sequential versus conventionally-dosed anthracycline and
+taxane-containing neoadjuvant therapy in patients with inﬂammatory breast
+cancer. Anticancer Res 2012;32(8):3539–45.
+[35] Ellis GK, Barlow WE, Gralow JR, Hortobagyi GN, Russell CA, Royce ME, et al.
+Phase III comparison of standard doxorubicin and cyclophosphamide versus
+weekly doxorubicin and daily oral cyclophosphamide plus granulocyte
+colony-stimulating factor as neoadjuvant therapy for inﬂammatory and
+locally
+advanced
+breast
+cancer:
+SWOG
+0012.
+J
+Clin
+Oncol
+2011;29
+(8):1014–21.
+[36] Masuda H, Iwamoto T, Brewer T, Hsu L, Kai K, Woodward WA, et al. Response
+to neoadjuvant systemic therapy (NST) in inﬂammatory breast cancer (IBC)
+according to estrogen receptor (ER) and HER2 expression. Cancer Research
+Conference: 35th Annual CTRC AACR San Antonio Breast Cancer Symposium
+San Antonio, TX United States Conference. Publication 2012;72(24 SUPPL. 3).
+[37] Shin HJ, Kim HH, Ahn JH, Kim SB, Jung KH, Gong G, et al. Comparison of
+mammography, sonography, MRI and clinical examination in patients with
+locally advanced or inﬂammatory breast cancer who underwent neoadjuvant
+chemotherapy. Br J Radiol 2011;84(1003):612–20.
+[38] Bertucci F, Ueno NT, Finetti P, Vermeulen P, Lucci A, Robertson FM, et al. Gene
+expression proﬁles of inﬂammatory breast cancer: correlation with response
+to neoadjuvant chemotherapy and metastasis-free survival. Ann Oncol
+2014;25(2):358–65.
+[39] Ueno NT, Espinosa Fernandez JR, Cristofanilli M, Overmoyer B, Rea D,
+Berdichevski F, et al. International consensus on the clinical management of
+Inﬂammatory Breast Cancer from the Morgan Welch Inﬂammatory Breast
+Cancer research program 10th anniversary conference. J Cancer 2018;9
+(8):1437–47.
+[40] Antman KH, Rowlings PA, Vaughan WP, Pelz CJ, Fay JW, Fields KK, et al. High-
+dose chemotherapy with autologous hematopoietic stem-cell support for
+breast cancer in North America. J Clin Oncol 1997;15(5):1870–9.
+[41] Cheng YC, Shi Y, Zhang MJ, Brazauskas R, Hemmer MT, Bishop MR, et al. Long-
+Term
+Outcome
+of
+Inﬂammatory
+Breast
+Cancer
+Compared
+to
+Non-
+Inﬂammatory Breast Cancer in the Setting of High-Dose Chemotherapy
+with Autologous Hematopoietic Cell Transplantation. J Cancer 2017;8
+(6):1009–17.
+[42] Viens P, Penault-Llorca F, Jacquemier J, Gravis G, Cowen D, Bertucci F, et al.
+High-dose chemotherapy and haematopoietic stem cell transplantation for
+inﬂammatory breast cancer: pathologic response and outcome. Bone Marrow
+Transplant 1998;21(3):249–54.
+[43] Schwartzberg L, Weaver C, Lewkow L, McAneny B, Zhen B, Birch R, et al. High-
+dose chemotherapy with peripheral blood stem cell support for stage IIIB
+inﬂammatory carcinoma of the breast. Bone Marrow Transplant 1999;24
+(9):981–7.
+[44] Somlo G, Frankel P, Chow W, Leong L, Margolin K, Morgan Jr R, et al.
+Prognostic indicators and survival in patients with stage IIIB inﬂammatory
+breast carcinoma after dose-intense chemotherapy. J Clin Oncol 2004;22
+(10):1839–48.
+[45] Viens P, Palangie T, Janvier M, Fabbro M, Roche H, Delozier T, et al. First-line
+high-dose sequential chemotherapy with rG-CSF and repeated blood stem
+cell transplantation in untreated inﬂammatory breast cancer: toxicity and
+response (PEGASE 02 trial). Br J Cancer 1999;81(3):449–56.
+[46] Palangie T, Viens P, Roché H, Beuzeboc P, Dieras V, Dorval T, et al. Dose-
+intensiﬁed
+chemotherapy
+and
+additional
+Docetaxel
+may
+improve
+inﬂammatory breast cancer patients outcome over two decades: Results
+from Institut Curie protocols 1977–1987 and two consecutive French
+multicenter trials Pegase 02 (1995–96) and Pegase 05 (1997–99). J Clin
+Oncol 2004;22(14_suppl):848.
+[47] Goncalves A, Monneur A, Viens P, Bertucci F. The use of systemic therapies to
+prevent progression of inﬂammatory breast cancer: which targeted therapies
+to add on cytotoxic combinations?. Expert Rev Anticancer Ther 2017;17
+(7):593–606.
+[48] Goncalves A, Pierga JY, Ferrero JM, Mouret-Reynier MA, Bachelot T, Delva R,
+et al. UNICANCER-PEGASE 07 study: a randomized phase III trial evaluating
+postoperative
+docetaxel-5FU
+regimen
+after
+neoadjuvant
+dose-intense
+chemotherapy for treatment of inﬂammatory breast cancer. Ann Oncol
+2015;26(8):1692–7.
+[49] Carlson LE, Koski T, Gluck S. Longitudinal effects of high-dose chemotherapy
+and autologous stem cell transplantation on quality of life in the treatment of
+metastatic breast cancer. Bone Marrow Transplant 2001;27(9):989–98.
+[50] Parton M, Dowsett M, Ashley S, Hills M, Lowe F, Smith IE. High incidence
+of
+HER-2
+positivity
+in
+inﬂammatory
+breast
+cancer.
+Breast
+2004;13
+(2):97–103.
+[51] Dawood S, Broglio K, Gong Y, Yang WT, Cristofanilli M, Kau SW, et al.
+Prognostic signiﬁcance of HER-2 status in women with inﬂammatory breast
+cancer. Cancer 2008;112(9):1905–11.
+[52] Zell JA, Tsang WY, Taylor TH, Mehta RS, Anton-Culver H. Prognostic impact of
+human epidermal growth factor-like receptor 2 and hormone receptor status
+in inﬂammatory breast cancer (IBC): Analysis of 2,014 IBC patient cases from
+the California Cancer Registry. Breast Cancer Res 2009;11(1) (no pagination)
+(R9).
+[53] Li J, Xia Y, Wu Q, Zhu S, Chen C, Yang W, et al. Outcomes of patients with
+inﬂammatory
+breast
+cancer
+by
+hormone
+receptor-
+and
+HER2-deﬁned
+molecular subtypes: A population-based study from the SEER program.
+Oncotarget 2017;8(30):49370–9.
+[54] Gianni L, Eiermann W, Semiglazov V, Lluch A, Tjulandin S, Zambetti M, et al.
+Neoadjuvant and adjuvant trastuzumab in patients with HER2-positive
+locally
+advanced
+breast
+cancer
+(NOAH):
+follow-up
+of
+a
+randomised
+controlled superiority trial with a parallel HER2-negative cohort. Lancet
+Oncol 2014;15(6):640–7.
+[55] Gianni L, Pienkowski T, Im YH, Roman L, Tseng LM, Liu MC, et al. Efﬁcacy and
+safety of neoadjuvant pertuzumab and trastuzumab in women with locally
+advanced, inﬂammatory, or early HER2-positive breast cancer (NeoSphere): a
+randomised multicentre, open-label, phase 2 trial. Lancet Oncol 2012;13
+(1):25–32.
+[56] Pizzuti L, Barba M, Giannarelli D, Sergi D, Botti C, Marchetti P, et al.
+Neoadjuvant Sequential Docetaxel Followed by High-Dose Epirubicin in
+Combination With Cyclophosphamide Administered Concurrently With
+Trastuzumab. The DECT Trial J Cell Physiol 2016;231(11):2541–7.
+[57] Torrisi R, Cardillo A, Cancello G, Dellapasqua S, Balduzzi A, Ghisini R, et al.
+Phase II trial of combination of pegylated liposomal doxorubicin, cisplatin,
+and
+infusional
+5-ﬂuorouracil
+(CCF)
+plus
+trastuzumab
+as
+preoperative
+treatment for locally advanced and inﬂammatory breast cancer. Clin Breast
+Cancer 2010;10(6):483–8.
+[58] Baselga J, Cortes J, Kim SB, Im SA, Hegg R, Im YH, et al. Pertuzumab plus
+trastuzumab plus docetaxel for metastatic breast cancer. N Engl J Med
+2012;366(2):109–19.
+[59] Baselga J, Swain SM. Novel anticancer targets: revisiting ERBB2 and
+discovering ERBB3. Nat Rev Cancer 2009;9(7):463–75.
+[60] Swain SM, Ewer MS, Viale G, Delaloge S, Ferrero JM, Verrill M, et al.
+Pertuzumab, trastuzumab, and standard anthracycline- and taxane-based
+chemotherapy for the neoadjuvant treatment of patients with HER2-positive
+localized breast cancer (BERENICE): a phase II, open-label, multicenter,
+multinational cardiac safety study. Ann Oncol 2018;29(3):646–53.
+[61] Gianni L, Pienkowski T, Im YH, Tseng LM, Liu MC, Lluch A, et al. 5-year
+analysis of neoadjuvant pertuzumab and trastuzumab in patients with locally
+advanced,
+inﬂammatory,
+or
+early-stage
+HER2-positive
+breast
+cancer
+(NeoSphere): a multicentre, open-label, phase 2 randomised trial. Lancet
+Oncol 2016;17(6):791–800.
+[62] Schneeweiss A, Chia S, Hickish T, Harvey V, Eniu A, Hegg R, et al. Pertuzumab
+plus trastuzumab in combination with standard neoadjuvant anthracycline-
+containing and anthracycline-free chemotherapy regimens in patients with
+HER2-positive early breast cancer: a randomized phase II cardiac safety study
+(TRYPHAENA). Ann Oncol 2013;24(9):2278–84.
+[63] Schneeweiss A, Chia S, Hickish T, Harvey V, Eniu A, Waldron-Lynch M, et al.
+Long-term efﬁcacy analysis of the randomised, phase II TRYPHAENA cardiac
+safety
+study:
+Evaluating
+pertuzumab
+and
+trastuzumab
+plus
+standard
+neoadjuvant anthracycline-containing and anthracycline-free chemotherapy
+regimens in patients with HER2-positive early breast cancer. Eur J Cancer
+2018;89:27–35.
+[64] Overmoyer B, Regan M, Hu J, Nakhlis F, Dominici L, Lin N, et al. Abstract P6–
+15-11: Weekly paclitaxel, pertuzumab and trastuzumab (TPH) neoadjuvant
+therapy for HER2 positive inﬂammatory breast cancer. Cancer Res 2018;78(4
+Supplement). P6-15-1-P6–1.
+[65] Scaltriti M, Verma C, Guzman M, Jimenez J, Parra JL, Pedersen K, et al.
+Lapatinib, a HER2 tyrosine kinase inhibitor, induces stabilization and
+accumulation
+of
+HER2
+and
+potentiates
+trastuzumab-dependent
+cell
+cytotoxicity. Oncogene 2009;28(6):803–14.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+10
+[66] Untch M, Loibl S, Bischoff J, Eidtmann H, Kaufmann M, Blohmer JU, et al.
+Lapatinib
+versus
+trastuzumab
+in
+combination
+with
+neoadjuvant
+anthracycline-taxane-based
+chemotherapy
+(GeparQuinto,
+GBG
+44):
+a
+randomised phase 3 trial. Lancet Oncol 2012;13(2):135–44.
+[67] Untch M, von Minckwitz G, Gerber B, Schem C, Rezai M, Fasching PA, et al.
+Survival Analysis After Neoadjuvant Chemotherapy With Trastuzumab or
+Lapatinib in Patients With Human Epidermal Growth Factor Receptor 2-
+Positive Breast Cancer in the GeparQuinto (G5) Study (GBG 44). J Clin Oncol
+2018;36(13):1308–16.
+[68] Boussen H, Cristofanilli M, Zaks T, DeSilvio M, Salazar V, Spector N. Phase II
+study to evaluate the efﬁcacy and safety of neoadjuvant lapatinib plus
+paclitaxel in patients with inﬂammatory breast cancer. J Clin Oncol 2010;28
+(20):3248–55.
+[69] Alvarez RH, Cristofanilli M, Ensor J, Lucci A, Yang WT, Huong TLP, et al.
+Limited
+efﬁcacy
+and
+signiﬁcant
+toxicities
+of
+lapatinib
+(Lap)
+plus
+chemotherapy
+as
+neoadjuvant
+therapy
+(NAC)
+for
+HER2-positive
+inﬂammatory breast cancer (IBC) patients (Pts). J Clin Oncol Conf 2012;30
+(15 SUPPL. 1).
+[70] Johnston S, Trudeau M, Kaufman B, Boussen H, Blackwell K, LoRusso P, et al.
+Phase II study of predictive biomarker proﬁles for response targeting human
+epidermal growth factor receptor 2 (HER-2) in advanced inﬂammatory breast
+cancer with lapatinib monotherapy. J Clin Oncol 2008;26(7):1066–72.
+[71] Baselga J, Bradbury I, Eidtmann H, Di Cosimo S, de Azambuja E, Aura C, et al.
+Lapatinib
+with
+trastuzumab
+for
+HER2-positive
+early
+breast
+cancer
+(NeoALTTO): a randomised, open-label, multicentre, phase 3 trial. Lancet
+(London, England) 2012;379(9816):633–40.
+[72] Barok M, Joensuu H, Isola J. Trastuzumab emtansine: mechanisms of action
+and drug resistance. Breast Cancer Res 2014;16(2):209.
+[73] Hurvitz SA, Martin M, Symmans WF, Jung KH, Huang CS, Thompson AM, et al.
+Neoadjuvant
+trastuzumab,
+pertuzumab,
+and
+chemotherapy
+versus
+trastuzumab emtansine plus pertuzumab in patients with HER2-positive
+breast cancer (KRISTINE): a randomised, open-label, multicentre, phase 3
+trial. Lancet Oncol 2018;19(1):115–26.
+[74] von Minckwitz G, Huang CS, Mano MS, Loibl S, Mamounas EP, Untch M, et al.
+Trastuzumab Emtansine for Residual Invasive HER2-Positive Breast Cancer. N
+Engl J Med 2019;380(7):617–28.
+[75] von Minckwitz G, Procter M, de Azambuja E, Zardavas D, Benyunes M, Viale G,
+et al. Adjuvant Pertuzumab and Trastuzumab in Early HER2-Positive Breast
+Cancer. N Engl J Med 2017;377(2):122–31.
+[76] Chan A, Delaloge S, Holmes FA, Moy B, Iwata H, Harvey VJ, et al. Neratinib
+after trastuzumab-based adjuvant therapy in patients with HER2-positive
+breast cancer (ExteNET): a multicentre, randomised, double-blind, placebo-
+controlled, phase 3 trial. Lancet Oncol 2016;17(3):367–77.
+[77] Volk L, Wilber A, Desai N, Trieu V, Ran S. Nab-paclitaxel and bevacizumab
+treatment in new models of inﬂammatory breast cancer, SUM149-RR and
+SUM149-GL. In: Cancer Research Conference: 101st Annual Meeting of the
+American Association for Cancer Research, AACR, vol. 70, no. suppl. 1; 2010.
+[78] Bertucci F, Fekih M, Autret A, Petit T, Dalenc F, Levy C, et al. Bevacizumab plus
+neoadjuvant chemotherapy in patients with HER2-negative inﬂammatory
+breast cancer (BEVERLY-1): A multicentre, single-arm, phase 2 study. Lancet
+Oncol 2016;17(5):600–11.
+[79] Pierga JY, Petit T, Levy C, Ferrero JM, Campone M, Gligorov J, et al. Pathological
+response
+and
+circulating
+tumor
+cell
+count
+identiﬁes
+treated
+HER2+
+inﬂammatory breast cancer patients with excellent prognosis: BEVERLY-2
+survival data. Clin Cancer Res 2015;21(6):1298–304.
+[80] Palazzo A, Dellapasqua S, Munzone E, Bagnardi V, Mazza M, Cancello G, et al.
+Phase II Trial of Bevacizumab Plus Weekly Paclitaxel, Carboplatin, and
+Metronomic
+Cyclophosphamide
+With
+or
+Without
+Trastuzumab
+and
+Endocrine Therapy as Preoperative Treatment of Inﬂammatory Breast
+Cancer. Clin Breast Cancer 2018;18(4):328–35.
+[81] Pierga JY, Bidard FC, Autret A, Petit T, Andre F, Dalenc F, et al. Circulating
+tumour cells and pathological complete response: independent prognostic
+factors in inﬂammatory breast cancer in a pooled analysis of two multicentre
+phase II trials (BEVERLY-1 and -2) of neoadjuvant chemotherapy combined
+with bevacizumab. Ann Oncol 2017;28(1):103–9.
+[82] Gianni L, Romieu GH, Lichinitser M, Serrano SV, Mansutti M, Pivot X, et al.
+AVEREL: a randomized phase III Trial evaluating bevacizumab in combination
+with docetaxel and trastuzumab as ﬁrst-line therapy for HER2-positive
+locally recurrent/metastatic breast cancer. J Clini Oncol Off J Am Soc Clin
+Oncol 2013;31(14):1719–25.
+[83] Cameron D, Brown J, Dent R, Jackisch C, Mackey J, Pivot X, et al. Adjuvant
+bevacizumab-containing
+therapy
+in
+triple-negative
+breast
+cancer
+(BEATRICE): primary results of a randomised, phase 3 trial. Lancet Oncol
+2013;14(10):933–42.
+[84] Matsuda N, Lim B, Wang X, Ueno NT. Early clinical development of epidermal
+growth factor receptor targeted therapy in breast cancer. Expert Opin Invest
+Drugs 2017;26(4):463–79.
+[85] Cabioglu N, Gong Y, Islam R, Broglio KR, Sneige N, Sahin A, et al. Expression of
+growth factor and chemokine receptors: new insights in the biology of
+inﬂammatory breast cancer. Ann Oncol 2007;18(6):1021–9.
+[86] Matsuda N, Wang X, Lim B, Krishnamurthy S, Alvarez RH, Willey JS, et al.
+Safety and Efﬁcacy of Panitumumab Plus Neoadjuvant Chemotherapy in
+Patients With Primary HER2-Negative Inﬂammatory Breast Cancer. JAMA
+Oncol 2018;4(9):1207–13.
+[87] Johnston SR, Gomez H, Stemmer SM, Richie M, Durante M, Pandite L, et al. A
+randomized and open-label trial evaluating the addition of pazopanib to
+lapatinib as ﬁrst-line therapy in patients with HER2-positive advanced breast
+cancer. Breast Cancer Res Treat 2013;137(3):755–66.
+[88] Cristofanilli M, Johnston SR, Manikhas A, Gomez HL, Gladkov O, Shao Z, et al.
+A randomized phase II study of lapatinib + pazopanib versus lapatinib in
+patients with HER2+ inﬂammatory breast cancer. Breast Cancer Res Treat
+2013;137(2):471–82.
+[89] Swanton C, Cromer J. Open-label, phase II trial of afatinib, with or without
+vinorelbine (V), for the treatment of HER2-overexpressing inﬂammatory
+breast cancer (IBC). J Clin Oncol Conf 2012;30(15 SUPPL. 1).
+[90] Goh G, Schmid R, Guiver K, Arpornwirat W, Chitapanarux I, Ganju V, et al.
+Clonal
+Evolutionary
+Analysis
+during
+HER2
+Blockade
+in
+HER2-Positive
+Inﬂammatory Breast Cancer: A Phase II Open-Label Clinical Trial of Afatinib
++/- Vinorelbine. PLoS Med 2016;13(12):e1002136.
+[91] Specht JM, Kurland BF, Linden HM, Gralow J, Gadi VK, Ellis GK, et al. A phase II
+study evaluating the safety and efﬁcacy of sunitinib with weekly paclitaxel
+followed by doxorubicin and daily oral cyclophosphamide plus G-CSF as
+neoadjuvant chemotherapy (NC) for locally advanced (LABC) or inﬂammatory
+breast cancer (IBC). J Clin Oncol Conf 2013;31(15 SUPPL. 1).
+[92] von Minckwitz G, Schneeweiss A, Loibl S, Salat C, Denkert C, Rezai M, et al.
+Neoadjuvant carboplatin in patients with triple-negative and HER2-positive
+early breast cancer (GeparSixto; GBG 66): a randomised phase 2 trial. Lancet
+Oncol 2014;15(7):747–56.
+[93] Sikov WM, Berry DA, Perou CM, Singh B, Cirrincione CT, Tolaney SM, et al.
+Impact of the addition of carboplatin and/or bevacizumab to neoadjuvant
+once-per-week
+paclitaxel
+followed
+by
+dose-dense
+doxorubicin
+and
+cyclophosphamide on pathologic complete response rates in stage II to III
+triple-negative breast cancer: CALGB 40603 (Alliance). J Clin Oncol 2015;33
+(1):13–21.
+[94] Masuda N, Lee SJ, Ohtani S, Im YH, Lee ES, Yokota I, et al. Adjuvant
+Capecitabine for Breast Cancer after Preoperative Chemotherapy. N Engl J
+Med 2017;376(22):2147–59.
+[95] Davies C, Pan H, Godwin J, Gray R, Arriagada R, Raina V, et al. Long-term
+effects of continuing adjuvant tamoxifen to 10 years versus stopping at 5
+years after diagnosis of oestrogen receptor-positive breast cancer: ATLAS, a
+randomised trial. Lancet (London, England) 2013;381(9869):805–16.
+[96] Gray RG, Rea D, Handley K, Bowden SJ, Perry P, Earl HM, et al. aTTom: Long-
+term effects of continuing adjuvant tamoxifen to 10 years versus stopping at
+5 years in 6,953 women with early breast cancer. J Clin Oncol 2013;31
+(18_suppl):5.
+[97] Goss PE, Ingle JN, Martino S, Robert NJ, Muss HB, Piccart MJ, et al. A
+randomized trial of letrozole in postmenopausal women after ﬁve years of
+tamoxifen therapy for early-stage breast cancer. N Engl J Med 2003;349
+(19):1793–802.
+[98] Goss PE, Ingle JN, Pritchard KI, Robert NJ, Muss H, Gralow J, et al. Extending
+Aromatase-Inhibitor Adjuvant Therapy to 10 Years. N Engl J Med 2016;375
+(3):209–19.
+[99] Francis PA, Pagani O, Fleming GF, Walley BA, Colleoni M, Lang I, et al. Tailoring
+Adjuvant Endocrine Therapy for Premenopausal Breast Cancer. N Engl J Med
+2018;379(2):122–37.
+[100] Gnant M, Mlineritsch B, Stoeger H, Luschin-Ebengreuth G, Knauer M, Moik M,
+et al. Zoledronic acid combined with adjuvant endocrine therapy of
+tamoxifen
+versus
+anastrozol
+plus
+ovarian
+function
+suppression
+in
+premenopausal early breast cancer: ﬁnal analysis of the Austrian Breast
+and Colorectal Cancer Study Group Trial 12. Ann Oncol 2015;26(2):313–20.
+[101] Schmid P, Adams S, Rugo HS, Schneeweiss A, Barrios CH, Iwata H, et al.
+Atezolizumab and Nab-Paclitaxel in Advanced Triple-Negative Breast Cancer.
+N Engl J Med 2018;379(22):2108–21.
+[102] Schmid P, Cortes J, Pusztai L, McArthur H, Kummel S, Bergh J, et al.
+Pembrolizumab for Early Triple-Negative Breast Cancer. N Engl J Med
+2020;382(9):810–21.
+[103] Nanda R, Liu MC, Yau C, Shatsky R, Pusztai L, Wallace A, et al. Effect of
+Pembrolizumab Plus Neoadjuvant Chemotherapy on Pathologic Complete
+Response in Women With Early-Stage Breast Cancer: An Analysis of the
+Ongoing Phase 2 Adaptively Randomized I-SPY2 Trial. JAMA Oncol 2020.
+[104] He J, Huo L, Ma J, Zhao J, Bassett RL, Sun X, et al. Expression of Programmed
+Death Ligand 1 (PD-L1) in Posttreatment Primary Inﬂammatory Breast
+Cancers and Clinical Implications. Am J Clin Pathol 2018;149(3):253–61.
+[105] Bertucci F, Finetti P, Colpaert C, Mamessier E, Parizel M, Dirix L, et al. PDL1
+expression in inﬂammatory breast cancer is frequent and predicts for the
+pathological response to chemotherapy. Oncotarget 2015;6(15):13506–19.
+[106] Arias-Pulido H, Cimino-Mathews A, Chaher N, Qualls C, Joste N, Colpaert C,
+et al. The combined presence of CD20 + B cells and PD-L1 + tumor-inﬁltrating
+lymphocytes in inﬂammatory breast cancer is prognostic of improved patient
+outcome. Breast Cancer Res Treat 2018;171(2):273–82.
+[107] Van Berckelaer C, Rypens C, van Dam P, Pouillon L, Parizel M, Schats KA, et al.
+Inﬁltrating
+stromal
+immune
+cells
+in
+inﬂammatory
+breast
+cancer
+are
+associated with an improved outcome and increased PD-L1 expression.
+Breast Cancer Res 2019;21(1):28.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+11
+[108] Wang X, Shao S, Semba T, Pearson T, Re JM, Tripathy D, et al. Abstract 4492:
+Humanized anti-EGFR antibody panitumumab inhibits tumor growth of
+inﬂammatory breast cancer by inducing antitumor immunity. Cancer Res
+2019.
+Sudpreeda Chainitikun graduated with a fellowship in
+medical
+oncology
+in
+2015
+at
+King
+Chulalongkorn
+Memorial Hospital, Chulalongkorn University, Thailand.
+Then, he worked as a medical oncologist at King Chu-
+lalongkorn Memorial Hospital and Mahachai Hospital,
+where he had extensive experience in the oncology ﬁeld
+and patient service. Currently, he is in a training pro-
+gram as a postdoctoral fellow in the Department of
+Breast Medical Oncology–Research at The University of
+Texas MD Anderson Cancer Center, Houston, Texas, USA.
+His research is focusing on clinical research of breast
+cancer treatment.
+Sadia Saleem is an assistant professor in the depart-
+ment of Breast Medical Oncology at The University of
+Texas MD Anderson Cancer Center, Houston, Texas, USA.
+She
+completed
+her
+fellowship
+in
+hematology
+and
+oncology at UT Southwestern in Dallas, Texas. She
+serves as co-investigator on multiple breast cancer
+clinical trials. Dr. Saleem’s key interests include man-
+agement of IBC, TNBC, and metastatic breast cancer. She
+strives to increase patient access to clinical trial proto-
+cols at the Houston area locations to improve patient
+care opportunities and outcomes.
+Bora Lim is an assistant professor at The University of
+Texas MD Anderson Cancer Center, Houston, Texas, USA.
+She is a translational investigator who seeks to discover
+a novel therapeutic strategy to halt or treat aggressive
+breast cancer by apoptosis (effective cancer cell killing)
+induction strategy. She also studies new ways of deliv-
+ering these novel agents and seeks to determine a cor-
+rect target population using new diagnostic methods
+such as liquid biopsy and single-cell genomics. She is a
+member of IBC and TNBC working groups and serves as
+faculty in an advanced breast cancer clinic.
+Vicente Valero has been with The University of Texas
+MD Anderson Cancer Center, Houston, Texas, USA, since
+June 1991. He is an actively involved teacher in the
+Breast Medical Oncology Clinic for fellows and residents
+at MD Anderson Cancer Center, where he was honored
+as Teacher of the Year for the 1993-1994 and 1996-1997
+academic years and the Educator of the Month for
+December 2003. He has more than 200 publications
+including articles in peer-reviewed journals, editorials,
+invited articles, book chapters, and abstracts.
+Naoto T. Ueno is a professor of medicine at The
+University
+of
+Texas
+MD
+Anderson
+Cancer
+Center,
+Houston, Texas, USA. He is breast medical oncologist
+who specializes in IBC, TNBC, and metastatic breast
+cancer. He is the executive director of the Morgan
+Welch Inﬂammatory Breast Cancer Program and Clinic
+and section chief of the Translational Breast Cancer
+Research at the Department of Breast Medical Oncology.
+He also directly supervises numerous medical students,
+graduate students, postdoctoral fellows, junior faculty,
+and clinical residents and fellows. Currently, he has
+more than 200 related breast cancer publications.
+S. Chainitikun et al.
+Journal of Advanced Research 29 (2021) 1–12
+12
