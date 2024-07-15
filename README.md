@@ -20,7 +20,7 @@ python -m graphrag.index --init --root .
 
 ## GraphRAG Indexing :
 python -m graphrag.index --root .
-[ Indexer is checkpointed, as a result Rate Limit API Errors can be handled ]
+[ Indexer is cached, as a result Rate Limit API Errors can be handled ]
 
 ## Run a GraphRAG Query :
 python -m graphrag.query --root . --method global "What is the main focus of the paper?"
