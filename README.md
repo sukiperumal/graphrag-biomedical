@@ -28,5 +28,6 @@ python -m graphrag.query --root . --method local "Explain the methods explored i
 
 ## Results :
 ### Global Search 
+Example Query : python -m graphrag.query --root . --method global "Explain the role of this paper in the context of breast cancer diagnosis"
 
 ![image](https://github.com/user-attachments/assets/d2e2111d-0b91-4d48-a938-724ffd45cacc)
