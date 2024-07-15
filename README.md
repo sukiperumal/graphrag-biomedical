@@ -24,4 +24,4 @@ python -m graphrag.index --root .
 
 ## Run a GraphRAG Query :
 python -m graphrag.query --root . --method global "What is the main focus of the paper?"
-python -m graphrag.query --root . --method local "What is the main focus of the paper?"
+python -m graphrag.query --root . --method local "Explain the methods explored in this paper about breast cancer ?"
